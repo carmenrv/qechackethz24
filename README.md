@@ -1,9 +1,9 @@
-# iQuHACK 2024 - QuEra Challenge
+# ETH Quantum Hackathon 2024 - QuEra & MOODY'S Challenge
 
-Here you will learn all the details needed to operate QuEra resources for iQuHack 2024. See [`challenge.md`](challenge.md) to find out about the actual challenge.
+Here you will learn all the details needed to operate QuEra resources for ETH Quantum Hackathon 2024. See [`challenge.md`](challenge.md) to find out about the actual challenge.
 
 
-The folder [tutorial/](tutorial/) contains material related to the presentation of the iQuHack Friday workshop.
+The folder [tutorial/](tutorial/) contains material related to the presentation of the ETH Quantum Hackathon workshop on Saturday morning.
 
 Check also the [references/](references/) folder for papers that may be relevant for you. If useful, the authors of the original work in which this challenge is based have also documented their code quite clearly in [this  GitHub repo](https://github.com/jpmorganchase/hardness-of-mis-on-udg). But beware: time for this challenge is short, so make sure to not get lost in navigating too much content!
 
@@ -46,7 +46,7 @@ To guarantee fair sharing of resources among teams, here are the guidelines for 
 
 ## Documentation
 
-This year’s iQuHACK challenges require a write-up/documentation portion that is heavily considered during
+This year’s ETH Quantum Hackathon challenges require a write-up/documentation portion that is heavily considered during
 judging. The write-up is a chance for you to be creative in describing your approach and describing
 your process. It should clearly explain the problem, the approach you used, your implementation with results
 from simulation and hardware, and how you accessed the quantum hardware (total number of shots used, 
