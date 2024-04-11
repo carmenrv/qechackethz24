@@ -63,4 +63,4 @@ To submit the challenge, do the following:
 3. Create a Pull Request from your repository to the original challenge repository
 4. Submit the "challenge submission" form
 
-Project submission forms will automatically close on Sunday at 10am EST and won't accept late submissions.
+Project submission forms will automatically close on Sunday at 11:30AM CET and won't accept late submissions.
