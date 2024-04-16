@@ -31,7 +31,7 @@ Exploring this as a path for quantum advantage is your challenge!
     + Larger problems and better chance to solution => more points
 
 ### Business
-*   Determine an application for MIS in the areas of energy (e.g., power grid networks), biology/health, logistics, or finance.
+*   Determine an application for MIS in the areas of risk analysis, and finance.
     + bonus points if your application requires graphs fitting exactly the constraint of the Rb/a=3 type
 *   Estimate how many vertices would be necessary for real-life problems. 
     + Bonus points for finding applications that require order near-term numbers of qubits, order few hundreds.
