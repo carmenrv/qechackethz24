@@ -24,7 +24,7 @@ While simulations and emulations of your program can be done locally on your com
 1. To launch these materials on qBraid, first fork this repository and click the above `Launch on qBraid` button. It will take you to your qBraid Lab with the repository cloned.
 2. Once cloned, open terminal (first icon in the **Other** column in Launcher) and `cd` into this repo. Set the repo's remote origin using the git clone url you copied in Step 1, and then create a new branch for your team:
 ```bash
-cd  2024_QuEra
+cd  qechackethz24
 git remote set-url origin <url>
 git branch <team_name>
 git checkout <team_name>
@@ -32,7 +32,7 @@ git checkout <team_name>
 3.  <img align="right" width="43%" src="https://github.com/iQuHACK/2024_planning_quera/assets/32727721/d879f6b0-a4a9-4610-8643-90e5d2a882ef"> Use the environment manager (**ENVS** tab in the right sidebar) to [install environment](https://qbraid-qbraid.readthedocs-hosted.com/en/latest/lab/environments.html#install-environment) "Bloqade Python". The installation should take ~2 min.
 
 5. Once the installation is complete, click **Activate** to [add a new ipykernel](https://qbraid-qbraid.readthedocs-hosted.com/en/latest/lab/kernels.html#add-remove-kernels) for "Bloqade Python".
-6. From the **FILES** tab in the left sidebar, double-click on the `2024_QuEra` directory and select the Bloqade Python kernel from the kernel selector.
+6. From the **FILES** tab in the left sidebar, double-click on the `qechackethz24` directory and select the Bloqade Python kernel from the kernel selector.
 7. You are now ready to begin hacking and [submitting jobs to Aquila](https://docs.qbraid.com/en/latest/sdk/jobs.html)! Work with your team to complete either of the challenges listed above.
 
 For other questions or additional help using qBraid, see [Lab User Guide](https://docs.qbraid.com/en/latest/), or reach out on [Discord](https://discord.gg/gwBebaBZZX).
@@ -41,7 +41,7 @@ For other questions or additional help using qBraid, see [Lab User Guide](https:
 To guarantee fair sharing of resources among teams, here are the guidelines for usage of QuEra's quantum computing resources during the hackaton:
 * Tasks are to be limited to **100 repetition shots**.
 * Hybrid optimization jobs will **not** be allowed.
-* Aquila will be continuously available to participants from [time range]
+* Aquila will be continuously available to participants.
 
 
 ## Documentation
