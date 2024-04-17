@@ -1,4 +1,4 @@
-# Challenge Statement: MIS Beyond King's Lattice
+# Challenge Statement: MIS in complex graphs and applications in finance
 ### (Based on https://arxiv.org/pdf/2307.09442.pdf)
 
 Neutral-atom quantum hardware is well-adapted to solving maximum independent set (MIS) problems, which are known to have several applications including industries such as telecom and chip design. Previously, [studies reported](https://arxiv.org/pdf/2202.09372.pdf) a quantum speed-up of quantum adiabatic algorithms using neutral-atoms hardware against simulated annealing in graph instances of the defective king’s lattice (aka Union-Jack) class, where vertices are positioned in a square lattice with a few vertices removed randomly and connections are defined via a unit-disk constraint binding first neighbors (laterals) and second neighbors (diagonals). The king’s lattice problem instances are relevant for specific applications, in particular being [directly related](https://www.cs.du.edu/~snarayan/sada/research/docs/p130-hochbaum.pdf) to very large-scale integration (VLSI) in chip design.
@@ -31,7 +31,7 @@ Exploring this as a path for quantum advantage is your challenge!
     + Larger problems and better chance to solution => more points
 
 ### Business
-*   Determine an application for MIS in the areas of energy (e.g., power grid networks), biology/health, logistics, or finance.
+*   Determine an application for MIS in the areas of risk analysis, and finance.
     + bonus points if your application requires graphs fitting exactly the constraint of the Rb/a=3 type
 *   Estimate how many vertices would be necessary for real-life problems. 
     + Bonus points for finding applications that require order near-term numbers of qubits, order few hundreds.
