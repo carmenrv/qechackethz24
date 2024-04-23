@@ -15,6 +15,9 @@ For this event, you will need to operate it from inside qBraid's platform, but i
 
 Guidelines for the Julia version can also be found [here](https://queracomputing.github.io/Bloqade.jl/dev/). Another of QuEra's packages for graph problems that may be useful to you is Generic Tensor Networks; instructions can be found [here](https://queracomputing.github.io/GenericTensorNetworks.jl/dev/). It is also based on Julia language.
 
+## Debugging and technical support
+
+To make sure you have access to debugging and technical support from QuEra's team, make sure at least 1 person of your team connects to [QuEra's public Slack workspace](https://querapublic.slack.com/join/shared_invite/zt-1r86wjwxs-OcdmXqBOisO~AHISXTL80w#/shared-invite/email). You should be able to reach to John Long or Pedro Lopes for technical help.
 
 ## Working on qBraid
 [<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150">](https://account.qbraid.com?gitHubUrl=https://github.com/iQuHACK/2024_QuEra.git)
