@@ -14,6 +14,15 @@ More recently, the quantum speed-up against simulated annealing was more [thorou
 </br>
 Exploring this as a path for quantum advantage is your challenge!
 
+Your challenge is twofold:
+
+* Explore this as a path for quantum advantage!
+* Find an application in the areas of risk analysis and finance.
+
+An example of an application of a (different) graph theoretic problem to the study of **economic networks** is the maximal independent set (mIS) defined as following: mIS is an independent set that is not a subset of any other independent set. mIS is a different graph problem to MIS and, as seen [here](https://arxiv.org/abs/0907.3309), can be used to the study of strategic interactions in economic networks. After finishing the **theory** and **programming** part of the challenge below, you will need to find an application of the **MIS graph problem** to the areas of risk analysis and finance. 
+</br>
+</br>
+
 ## Activities:
 
 ### Theory
