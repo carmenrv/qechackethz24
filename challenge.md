@@ -26,6 +26,7 @@ Other good resources to look for inspiration are:
 * [Quantum Computing for Finance: State of the Art and Future Prospects June 2020](https://arxiv.org/abs/2006.14510)
 * [A Survey of Quantum Computing for Finance Jan 2022](https://arxiv.org/abs/2201.02773)
 * [Quantum Computing for Finance July 2023](https://arxiv.org/pdf/2307.11230)
+* [Quantitative Risk Management](https://www.researchgate.net/publication/235622467_Quantitative_Risk_Management_Concepts_Techniques_and_Tools)
 
 </br>
 </br>
