@@ -52,6 +52,6 @@ Other good resources to look for inspiration are:
 *   Estimate how many vertices would be necessary for real-life problems. 
     + Bonus points for finding applications that require order near-term numbers of qubits, order few hundreds.
 
-While you are encouraged to play to your strengths when choosing focus on the activities above, note that the winning team will be the one with the strongest presentation all across the board! So make sure you divide your attention and efforts properly.
+You are encouraged to play to your strengths and choose focus on activities above. The winning team will be the one with the strongest content overall, covering a minimum of 2 out of the 3 activities above. So make sure you divide your attention and efforts properly.
 
 And to finish: don't forget to prepare a 5-10min presentation with your findings and results! Support visuals (such as slides) will be welcome. You will have an opportunity to present your results in this format during the project presentation time on Sunday.
