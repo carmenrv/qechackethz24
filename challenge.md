@@ -19,6 +19,14 @@ Your challenge is twofold:
 * Find an application in the areas of risk analysis and finance.
 
 An example of an application of a (different) graph theoretic problem to the study of [**economic networks**](https://arxiv.org/pdf/2203.11972) is the maximal independent set (mIS) defined as following: mIS is an independent set that is not a subset of any other independent set. mIS is a different graph problem to MIS and, as seen [here](https://arxiv.org/abs/0907.3309), can be used to the study of strategic interactions in economic networks. After finishing the **theory** and **programming** part of the challenge below, you will need to find an application of the **MIS graph problem** to the areas of risk analysis and finance. 
+
+Other good resources to look for inspiration are:
+
+* [Quantum computing for finance: overview and prospects July 2018](https://arxiv.org/abs/1807.03890)
+* [Quantum Computing for Finance: State of the Art and Future Prospects June 2020](https://arxiv.org/abs/2006.14510)
+* [A Survey of Quantum Computing for Finance Jan 2022](https://arxiv.org/abs/2201.02773)
+* [Quantum Computing for Finance July 2023](https://arxiv.org/pdf/2307.11230)
+
 </br>
 </br>
 
