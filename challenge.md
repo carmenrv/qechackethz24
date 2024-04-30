@@ -12,7 +12,24 @@ More recently, the quantum speed-up against simulated annealing was more [thorou
 <em> (left) A defective king's lattice with vertices on a 5x5 square grid with 20% dropped-out points. Edges connect the first (lateral and vertical) and second (diagonal) neighbors. (right) A similar defective square grid, but with vertices connecting edges at a larger scale equals up to 3 times the lattice constant. </em>
 </br>
 </br>
-Exploring this as a path for quantum advantage is your challenge!
+
+Your challenge is twofold:
+
+* Explore this as a path for quantum advantage!
+* Find an application in the areas of risk analysis and finance.
+
+An example of an application of a (different) graph theoretic problem to the study of [**economic networks**](https://arxiv.org/pdf/2203.11972) is the maximal independent set (mIS) defined as following: mIS is an independent set that is not a subset of any other independent set. mIS is a different graph problem to MIS and, as seen [here](https://arxiv.org/abs/0907.3309), can be used to the study of strategic interactions in economic networks. After finishing the **theory** and **programming** part of the challenge below, you will need to find an application of the **MIS graph problem** to the areas of risk analysis and finance. 
+
+Other good resources to look for inspiration are:
+
+* [Quantum computing for finance: overview and prospects July 2018](https://arxiv.org/abs/1807.03890)
+* [Quantum Computing for Finance: State of the Art and Future Prospects June 2020](https://arxiv.org/abs/2006.14510)
+* [A Survey of Quantum Computing for Finance Jan 2022](https://arxiv.org/abs/2201.02773)
+* [Quantum Computing for Finance July 2023](https://arxiv.org/pdf/2307.11230)
+* [Quantitative Risk Management](https://www.researchgate.net/publication/235622467_Quantitative_Risk_Management_Concepts_Techniques_and_Tools)
+
+</br>
+</br>
 
 ## Activities:
 
@@ -36,6 +53,6 @@ Exploring this as a path for quantum advantage is your challenge!
 *   Estimate how many vertices would be necessary for real-life problems. 
     + Bonus points for finding applications that require order near-term numbers of qubits, order few hundreds.
 
-While you are encouraged to play to your strengths when choosing focus on the activities above, note that the winning team will be the one with the strongest presentation all across the board! So make sure you divide your attention and efforts properly.
+You are encouraged to play to your strengths and choose focus on activities above. The winning team will be the one with the strongest content overall, covering a minimum of 2 out of the 3 activities above. So make sure you divide your attention and efforts properly.
 
 And to finish: don't forget to prepare a 5-10min presentation with your findings and results! Support visuals (such as slides) will be welcome. You will have an opportunity to present your results in this format during the project presentation time on Sunday.
