@@ -22,7 +22,7 @@ To make sure you have access to debugging and technical support from QuEra's tea
 Be sure to DM Pedro or John to be included in the `eth-zurich-hackathon` channel for broad event announcements.
 
 ## Working on qBraid
-[<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150">](https://account.qbraid.com?gitHubUrl=https://github.com/iQuHACK/2024_QuEra.git)
+[<img src="https://qbraid-static.s3.amazonaws.com/logos/Launch_on_qBraid_white.png" width="150">](https://account.qbraid.com?gitHubUrl=https://github.com/carmenrv/qechackethz24.git)
 
 While simulations and emulations of your program can be done locally on your computer, operation of QuEra's systems for this event will mandatorily go via qBraid (where you can also do the emulations, if you want). So here are some guidelines:
 
