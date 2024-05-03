@@ -24,7 +24,7 @@ Notice that your account IDs will be distributed via DM on the QuEra's public Sl
 ## Accessing Aquila
 In this event, you will have access to Aquila, QuEra's analog neutral-atom quantum computer! For that, we suggest using either python scripts or notebooks. Yet, to ensure your jobs do not get stuck in the long queue that seems to be coincident with the event, you will need to activate what are known as `hybrid` workflows on Amazon Braket. The original goal of hybrid workflows is to enable more performant variational algorithms. For us, it will just serve as a means to cut the line and get your results quicker.
 
-To help you understand how to submit `hybrid` jobs to Aquila, we prepared the following tutorial guidelines.
+To help you understand how to submit `hybrid` jobs to Aquila, we prepared the following [tutorial guidelines](assets/bloqade-braket-submission-guide.ipynb).
 
 ## Quantum resources availability and code of conduct
 To guarantee fair sharing of resources among teams, here are the guidelines for usage of QuEra's quantum computing resources during the hackaton:
