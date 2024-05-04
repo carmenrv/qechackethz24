@@ -52,6 +52,10 @@ Other good resources to look for inspiration are:
     + bonus points if your application requires graphs fitting exactly the constraint of the Rb/a=3 type
 *   Estimate how many vertices would be necessary for real-life problems. 
     + Bonus points for finding applications that require order near-term numbers of qubits, order few hundreds.
+ 
+<p float="middle">
+  <img src="/assets/image.png" width="30%" />
+</p>
 
 You are encouraged to play to your strengths and choose focus on activities above. The winning team will be the one with the strongest content overall, covering a minimum of 2 out of the 3 activities above. So make sure you divide your attention and efforts properly.
 
