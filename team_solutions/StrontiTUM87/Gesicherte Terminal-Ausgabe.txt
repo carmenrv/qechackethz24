@@ -1,0 +1,1524 @@
+Last login: Fri May  3 09:10:06 on ttys001
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+(base) eduroam-hix-dock-1-165:QO2 riarosenauer$ conda create env ethQuant2024
+
+CondaValueError: The target prefix is the base prefix. Aborting.
+
+(base) eduroam-hix-dock-1-165:QO2 riarosenauer$ conda create -n EthQuant python=3.9
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.10.3
+  latest version: 24.4.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /Users/riarosenauer/opt/anaconda3/envs/EthQuant
+
+  added / updated specs:
+    - python=3.9
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    libffi-3.4.4               |       hecd8cb5_1         129 KB
+    openssl-3.0.13             |       hca72f7f_1         4.6 MB
+    pip-23.3.1                 |   py39hecd8cb5_0         2.6 MB
+    python-3.9.19              |       h5ee71fb_0        12.7 MB
+    setuptools-68.2.2          |   py39hecd8cb5_0         950 KB
+    sqlite-3.45.3              |       h6c40b1e_0         1.2 MB
+    tzdata-2024a               |       h04d1e81_0         116 KB
+    wheel-0.43.0               |   py39hecd8cb5_0         107 KB
+    xz-5.4.6                   |       h6c40b1e_1         371 KB
+    zlib-1.2.13                |       h4b97444_1         102 KB
+    ------------------------------------------------------------
+                                           Total:        22.8 MB
+
+The following NEW packages will be INSTALLED:
+
+  ca-certificates    pkgs/main/osx-64::ca-certificates-2024.3.11-hecd8cb5_0
+  libcxx             pkgs/main/osx-64::libcxx-14.0.6-h9765a3e_0
+  libffi             pkgs/main/osx-64::libffi-3.4.4-hecd8cb5_1
+  ncurses            pkgs/main/osx-64::ncurses-6.4-hcec6c5f_0
+  openssl            pkgs/main/osx-64::openssl-3.0.13-hca72f7f_1
+  pip                pkgs/main/osx-64::pip-23.3.1-py39hecd8cb5_0
+  python             pkgs/main/osx-64::python-3.9.19-h5ee71fb_0
+  readline           pkgs/main/osx-64::readline-8.2-hca72f7f_0
+  setuptools         pkgs/main/osx-64::setuptools-68.2.2-py39hecd8cb5_0
+  sqlite             pkgs/main/osx-64::sqlite-3.45.3-h6c40b1e_0
+  tk                 pkgs/main/osx-64::tk-8.6.12-h5d9f67b_0
+  tzdata             pkgs/main/noarch::tzdata-2024a-h04d1e81_0
+  wheel              pkgs/main/osx-64::wheel-0.43.0-py39hecd8cb5_0
+  xz                 pkgs/main/osx-64::xz-5.4.6-h6c40b1e_1
+  zlib               pkgs/main/osx-64::zlib-1.2.13-h4b97444_1
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+libffi-3.4.4         | 129 KB    | ########################################################################################################################################################################################################## | 100% 
+python-3.9.19        | 12.7 MB   | ########################################################################################################################################################################################################## | 100% 
+openssl-3.0.13       | 4.6 MB    | ########################################################################################################################################################################################################## | 100% 
+sqlite-3.45.3        | 1.2 MB    | ########################################################################################################################################################################################################## | 100% 
+wheel-0.43.0         | 107 KB    | ########################################################################################################################################################################################################## | 100% 
+pip-23.3.1           | 2.6 MB    | ########################################################################################################################################################################################################## | 100% 
+xz-5.4.6             | 371 KB    | ########################################################################################################################################################################################################## | 100% 
+setuptools-68.2.2    | 950 KB    | ########################################################################################################################################################################################################## | 100% 
+zlib-1.2.13          | 102 KB    | ########################################################################################################################################################################################################## | 100% 
+tzdata-2024a         | 116 KB    | ########################################################################################################################################################################################################## | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate EthQuant
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) eduroam-hix-dock-1-165:QO2 riarosenauer$ conda activate EthQuant
+(EthQuant) eduroam-hix-dock-1-165:QO2 riarosenauer$ ls
+Untitled.ipynb
+(EthQuant) eduroam-hix-dock-1-165:QO2 riarosenauer$ pip install bloqade
+Collecting bloqade
+  Downloading bloqade-0.15.10-py3-none-any.whl.metadata (11 kB)
+Collecting juliacall>=0.9.14 (from bloqade)
+  Downloading juliacall-0.9.20-py3-none-any.whl.metadata (4.7 kB)
+Collecting numpy>=1.25.2 (from bloqade)
+  Downloading numpy-1.26.4-cp39-cp39-macosx_10_9_x86_64.whl.metadata (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.1/61.1 kB 1.2 MB/s eta 0:00:00
+Collecting pydantic>=2.0 (from bloqade)
+  Downloading pydantic-2.7.1-py3-none-any.whl.metadata (107 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 107.3/107.3 kB 1.1 MB/s eta 0:00:00
+Collecting scipy>=1.9.3 (from bloqade)
+  Downloading scipy-1.13.0-cp39-cp39-macosx_10_9_x86_64.whl.metadata (60 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.6/60.6 kB 3.1 MB/s eta 0:00:00
+Collecting pandas>=2.1.0 (from bloqade)
+  Downloading pandas-2.2.2-cp39-cp39-macosx_10_9_x86_64.whl.metadata (19 kB)
+Collecting bokeh>=3.2.2 (from bloqade)
+  Downloading bokeh-3.4.1-py3-none-any.whl.metadata (12 kB)
+Collecting tabulate>=0.9.0 (from bloqade)
+  Downloading tabulate-0.9.0-py3-none-any.whl.metadata (34 kB)
+Collecting requests-sigv4>=0.1.6 (from bloqade)
+  Downloading requests_sigv4-0.1.6-py3-none-any.whl.metadata (1.1 kB)
+Collecting amazon-braket-sdk>=1.78.0 (from bloqade)
+  Downloading amazon_braket_sdk-1.78.0-py3-none-any.whl.metadata (14 kB)
+Collecting plotext>=5.2.8 (from bloqade)
+  Downloading plotext-5.2.8-py3-none-any.whl.metadata (5.3 kB)
+Collecting beartype>=0.15.0 (from bloqade)
+  Downloading beartype-0.18.5-py3-none-any.whl.metadata (30 kB)
+Collecting simplejson>=3.19.1 (from bloqade)
+  Downloading simplejson-3.19.2-cp39-cp39-macosx_10_9_x86_64.whl.metadata (3.1 kB)
+Collecting plum-dispatch>=2.2.2 (from bloqade)
+  Downloading plum_dispatch-2.3.5-py3-none-any.whl.metadata (4.4 kB)
+Collecting numba>=0.58.0 (from bloqade)
+  Downloading numba-0.59.1-cp39-cp39-macosx_10_9_x86_64.whl.metadata (2.7 kB)
+Collecting amazon-braket-schemas>=1.21.3 (from amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading amazon_braket_schemas-1.21.4-py3-none-any.whl.metadata (5.9 kB)
+Collecting amazon-braket-default-simulator>=1.21.4 (from amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading amazon_braket_default_simulator-1.23.2-py3-none-any.whl.metadata (6.3 kB)
+Collecting oqpy~=0.3.5 (from amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading oqpy-0.3.5-py3-none-any.whl.metadata (7.7 kB)
+Collecting backoff (from amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading backoff-2.2.1-py3-none-any.whl.metadata (14 kB)
+Collecting boltons (from amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading boltons-24.0.0-py3-none-any.whl.metadata (1.5 kB)
+Collecting boto3>=1.28.53 (from amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading boto3-1.34.98-py3-none-any.whl.metadata (6.6 kB)
+Collecting cloudpickle==2.2.1 (from amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading cloudpickle-2.2.1-py3-none-any.whl.metadata (6.9 kB)
+Collecting nest-asyncio (from amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading nest_asyncio-1.6.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting networkx (from amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading networkx-3.2.1-py3-none-any.whl.metadata (5.2 kB)
+Collecting openpulse (from amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading openpulse-0.5.0-py3-none-any.whl.metadata (2.0 kB)
+Collecting openqasm3 (from amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading openqasm3-0.5.0-py3-none-any.whl.metadata (6.0 kB)
+Collecting sympy (from amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading sympy-1.12-py3-none-any.whl.metadata (12 kB)
+Collecting backports.entry-points-selectable (from amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading backports.entry_points_selectable-1.3.0-py3-none-any.whl.metadata (4.1 kB)
+Collecting Jinja2>=2.9 (from bokeh>=3.2.2->bloqade)
+  Downloading Jinja2-3.1.3-py3-none-any.whl.metadata (3.3 kB)
+Collecting contourpy>=1.2 (from bokeh>=3.2.2->bloqade)
+  Downloading contourpy-1.2.1-cp39-cp39-macosx_10_9_x86_64.whl.metadata (5.8 kB)
+Collecting packaging>=16.8 (from bokeh>=3.2.2->bloqade)
+  Downloading packaging-24.0-py3-none-any.whl.metadata (3.2 kB)
+Collecting pillow>=7.1.0 (from bokeh>=3.2.2->bloqade)
+  Downloading pillow-10.3.0-cp39-cp39-macosx_10_10_x86_64.whl.metadata (9.2 kB)
+Collecting PyYAML>=3.10 (from bokeh>=3.2.2->bloqade)
+  Downloading PyYAML-6.0.1-cp39-cp39-macosx_10_9_x86_64.whl.metadata (2.1 kB)
+Collecting tornado>=6.2 (from bokeh>=3.2.2->bloqade)
+  Downloading tornado-6.4-cp38-abi3-macosx_10_9_x86_64.whl.metadata (2.5 kB)
+Collecting xyzservices>=2021.09.1 (from bokeh>=3.2.2->bloqade)
+  Downloading xyzservices-2024.4.0-py3-none-any.whl.metadata (4.0 kB)
+Collecting juliapkg~=0.1.8 (from juliacall>=0.9.14->bloqade)
+  Downloading juliapkg-0.1.11-py3-none-any.whl.metadata (6.0 kB)
+Collecting llvmlite<0.43,>=0.42.0dev0 (from numba>=0.58.0->bloqade)
+  Downloading llvmlite-0.42.0-cp39-cp39-macosx_10_9_x86_64.whl.metadata (4.8 kB)
+Collecting python-dateutil>=2.8.2 (from pandas>=2.1.0->bloqade)
+  Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting pytz>=2020.1 (from pandas>=2.1.0->bloqade)
+  Downloading pytz-2024.1-py2.py3-none-any.whl.metadata (22 kB)
+Collecting tzdata>=2022.7 (from pandas>=2.1.0->bloqade)
+  Downloading tzdata-2024.1-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting rich>=10.0 (from plum-dispatch>=2.2.2->bloqade)
+  Downloading rich-13.7.1-py3-none-any.whl.metadata (18 kB)
+Collecting typing-extensions (from plum-dispatch>=2.2.2->bloqade)
+  Downloading typing_extensions-4.11.0-py3-none-any.whl.metadata (3.0 kB)
+Collecting annotated-types>=0.4.0 (from pydantic>=2.0->bloqade)
+  Downloading annotated_types-0.6.0-py3-none-any.whl.metadata (12 kB)
+Collecting pydantic-core==2.18.2 (from pydantic>=2.0->bloqade)
+  Downloading pydantic_core-2.18.2-cp39-cp39-macosx_10_12_x86_64.whl.metadata (6.5 kB)
+Collecting requests (from requests-sigv4>=0.1.6->bloqade)
+  Using cached requests-2.31.0-py3-none-any.whl.metadata (4.6 kB)
+Collecting requests-aws-sign (from requests-sigv4>=0.1.6->bloqade)
+  Downloading requests_aws_sign-0.1.6-py3-none-any.whl.metadata (938 bytes)
+Collecting opt-einsum (from amazon-braket-default-simulator>=1.21.4->amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading opt_einsum-3.3.0-py3-none-any.whl.metadata (6.5 kB)
+Collecting antlr4-python3-runtime==4.9.2 (from amazon-braket-default-simulator>=1.21.4->amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading antlr4-python3-runtime-4.9.2.tar.gz (117 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 117.2/117.2 kB 2.6 MB/s eta 0:00:00
+  Preparing metadata (setup.py) ... done
+Collecting botocore<1.35.0,>=1.34.98 (from boto3>=1.28.53->amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading botocore-1.34.98-py3-none-any.whl.metadata (5.7 kB)
+Collecting jmespath<2.0.0,>=0.7.1 (from boto3>=1.28.53->amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading jmespath-1.0.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting s3transfer<0.11.0,>=0.10.0 (from boto3>=1.28.53->amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading s3transfer-0.10.1-py3-none-any.whl.metadata (1.7 kB)
+Collecting MarkupSafe>=2.0 (from Jinja2>=2.9->bokeh>=3.2.2->bloqade)
+  Downloading MarkupSafe-2.1.5-cp39-cp39-macosx_10_9_x86_64.whl.metadata (3.0 kB)
+Collecting semantic-version~=2.9 (from juliapkg~=0.1.8->juliacall>=0.9.14->bloqade)
+  Downloading semantic_version-2.10.0-py2.py3-none-any.whl.metadata (9.7 kB)
+Collecting mypy-extensions>=0.2.0 (from oqpy~=0.3.5->amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading mypy_extensions-1.0.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting importlib-metadata (from openpulse->amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading importlib_metadata-7.1.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas>=2.1.0->bloqade)
+  Downloading six-1.16.0-py2.py3-none-any.whl.metadata (1.8 kB)
+Collecting markdown-it-py>=2.2.0 (from rich>=10.0->plum-dispatch>=2.2.2->bloqade)
+  Using cached markdown_it_py-3.0.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting pygments<3.0.0,>=2.13.0 (from rich>=10.0->plum-dispatch>=2.2.2->bloqade)
+  Downloading pygments-2.17.2-py3-none-any.whl.metadata (2.6 kB)
+Collecting charset-normalizer<4,>=2 (from requests->requests-sigv4>=0.1.6->bloqade)
+  Downloading charset_normalizer-3.3.2-cp39-cp39-macosx_10_9_x86_64.whl.metadata (33 kB)
+Collecting idna<4,>=2.5 (from requests->requests-sigv4>=0.1.6->bloqade)
+  Downloading idna-3.7-py3-none-any.whl.metadata (9.9 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->requests-sigv4>=0.1.6->bloqade)
+  Downloading urllib3-2.2.1-py3-none-any.whl.metadata (6.4 kB)
+Collecting certifi>=2017.4.17 (from requests->requests-sigv4>=0.1.6->bloqade)
+  Downloading certifi-2024.2.2-py3-none-any.whl.metadata (2.2 kB)
+Collecting mpmath>=0.19 (from sympy->amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting urllib3<3,>=1.21.1 (from requests->requests-sigv4>=0.1.6->bloqade)
+  Using cached urllib3-1.26.18-py2.py3-none-any.whl.metadata (48 kB)
+Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=10.0->plum-dispatch>=2.2.2->bloqade)
+  Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting zipp>=0.5 (from importlib-metadata->openpulse->amazon-braket-sdk>=1.78.0->bloqade)
+  Downloading zipp-3.18.1-py3-none-any.whl.metadata (3.5 kB)
+Downloading bloqade-0.15.10-py3-none-any.whl (169 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 169.7/169.7 kB 2.2 MB/s eta 0:00:00
+Downloading amazon_braket_sdk-1.78.0-py3-none-any.whl (310 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.1/310.1 kB 2.9 MB/s eta 0:00:00
+Downloading cloudpickle-2.2.1-py3-none-any.whl (25 kB)
+Downloading beartype-0.18.5-py3-none-any.whl (917 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 917.8/917.8 kB 3.9 MB/s eta 0:00:00
+Downloading bokeh-3.4.1-py3-none-any.whl (7.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.0/7.0 MB 4.6 MB/s eta 0:00:00
+Downloading juliacall-0.9.20-py3-none-any.whl (12 kB)
+Downloading numba-0.59.1-cp39-cp39-macosx_10_9_x86_64.whl (2.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 3.7 MB/s eta 0:00:00
+Downloading numpy-1.26.4-cp39-cp39-macosx_10_9_x86_64.whl (20.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 20.6/20.6 MB 7.1 MB/s eta 0:00:00
+Downloading pandas-2.2.2-cp39-cp39-macosx_10_9_x86_64.whl (12.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.6/12.6 MB 4.3 MB/s eta 0:00:00
+Downloading plotext-5.2.8-py3-none-any.whl (60 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.2/60.2 kB 2.1 MB/s eta 0:00:00
+Downloading plum_dispatch-2.3.5-py3-none-any.whl (37 kB)
+Downloading pydantic-2.7.1-py3-none-any.whl (409 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 409.3/409.3 kB 5.2 MB/s eta 0:00:00
+Downloading pydantic_core-2.18.2-cp39-cp39-macosx_10_12_x86_64.whl (1.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.9/1.9 MB 4.0 MB/s eta 0:00:00
+Downloading requests_sigv4-0.1.6-py3-none-any.whl (4.8 kB)
+Downloading scipy-1.13.0-cp39-cp39-macosx_10_9_x86_64.whl (39.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.3/39.3 MB 5.3 MB/s eta 0:00:00
+Downloading simplejson-3.19.2-cp39-cp39-macosx_10_9_x86_64.whl (76 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 76.4/76.4 kB 3.1 MB/s eta 0:00:00
+Downloading tabulate-0.9.0-py3-none-any.whl (35 kB)
+Downloading amazon_braket_default_simulator-1.23.2-py3-none-any.whl (222 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 222.3/222.3 kB 4.5 MB/s eta 0:00:00
+Downloading amazon_braket_schemas-1.21.4-py3-none-any.whl (121 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.1/121.1 kB 3.4 MB/s eta 0:00:00
+Downloading annotated_types-0.6.0-py3-none-any.whl (12 kB)
+Downloading boto3-1.34.98-py3-none-any.whl (139 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 139.3/139.3 kB 3.8 MB/s eta 0:00:00
+Downloading contourpy-1.2.1-cp39-cp39-macosx_10_9_x86_64.whl (260 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 261.0/261.0 kB 3.5 MB/s eta 0:00:00
+Downloading Jinja2-3.1.3-py3-none-any.whl (133 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 133.2/133.2 kB 2.2 MB/s eta 0:00:00
+Downloading juliapkg-0.1.11-py3-none-any.whl (15 kB)
+Downloading llvmlite-0.42.0-cp39-cp39-macosx_10_9_x86_64.whl (31.1 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 31.1/31.1 MB 2.7 MB/s eta 0:00:00
+Downloading oqpy-0.3.5-py3-none-any.whl (36 kB)
+Downloading openpulse-0.5.0-py3-none-any.whl (377 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 377.0/377.0 kB 3.1 MB/s eta 0:00:00
+Downloading openqasm3-0.5.0-py3-none-any.whl (524 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 524.0/524.0 kB 2.3 MB/s eta 0:00:00
+Downloading packaging-24.0-py3-none-any.whl (53 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 53.5/53.5 kB 1.8 MB/s eta 0:00:00
+Downloading pillow-10.3.0-cp39-cp39-macosx_10_10_x86_64.whl (3.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 4.2 MB/s eta 0:00:00
+Downloading python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 3.2 MB/s eta 0:00:00
+Downloading pytz-2024.1-py2.py3-none-any.whl (505 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 505.5/505.5 kB 4.3 MB/s eta 0:00:00
+Downloading PyYAML-6.0.1-cp39-cp39-macosx_10_9_x86_64.whl (197 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 197.8/197.8 kB 3.5 MB/s eta 0:00:00
+Downloading rich-13.7.1-py3-none-any.whl (240 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 240.7/240.7 kB 7.3 MB/s eta 0:00:00
+Downloading tornado-6.4-cp38-abi3-macosx_10_9_x86_64.whl (431 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 431.1/431.1 kB 4.9 MB/s eta 0:00:00
+Downloading typing_extensions-4.11.0-py3-none-any.whl (34 kB)
+Downloading tzdata-2024.1-py2.py3-none-any.whl (345 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 345.4/345.4 kB 8.8 MB/s eta 0:00:00
+Downloading xyzservices-2024.4.0-py3-none-any.whl (81 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 82.0/82.0 kB 12.8 MB/s eta 0:00:00
+Downloading backoff-2.2.1-py3-none-any.whl (15 kB)
+Downloading backports.entry_points_selectable-1.3.0-py3-none-any.whl (6.2 kB)
+Downloading boltons-24.0.0-py3-none-any.whl (191 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 191.7/191.7 kB 7.2 MB/s eta 0:00:00
+Downloading nest_asyncio-1.6.0-py3-none-any.whl (5.2 kB)
+Downloading networkx-3.2.1-py3-none-any.whl (1.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 4.7 MB/s eta 0:00:00
+Using cached requests-2.31.0-py3-none-any.whl (62 kB)
+Downloading requests_aws_sign-0.1.6-py3-none-any.whl (3.0 kB)
+Downloading sympy-1.12-py3-none-any.whl (5.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.7/5.7 MB 6.1 MB/s eta 0:00:00
+Downloading botocore-1.34.98-py3-none-any.whl (12.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.2/12.2 MB 5.3 MB/s eta 0:00:00
+Downloading certifi-2024.2.2-py3-none-any.whl (163 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 163.8/163.8 kB 5.2 MB/s eta 0:00:00
+Downloading charset_normalizer-3.3.2-cp39-cp39-macosx_10_9_x86_64.whl (122 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 122.5/122.5 kB 2.5 MB/s eta 0:00:00
+Downloading idna-3.7-py3-none-any.whl (66 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.8/66.8 kB 4.7 MB/s eta 0:00:00
+Downloading jmespath-1.0.1-py3-none-any.whl (20 kB)
+Using cached markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+Downloading MarkupSafe-2.1.5-cp39-cp39-macosx_10_9_x86_64.whl (14 kB)
+Downloading mpmath-1.3.0-py3-none-any.whl (536 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 536.2/536.2 kB 4.0 MB/s eta 0:00:00
+Downloading mypy_extensions-1.0.0-py3-none-any.whl (4.7 kB)
+Downloading pygments-2.17.2-py3-none-any.whl (1.2 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 4.3 MB/s eta 0:00:00
+Downloading s3transfer-0.10.1-py3-none-any.whl (82 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 82.2/82.2 kB 3.2 MB/s eta 0:00:00
+Downloading semantic_version-2.10.0-py2.py3-none-any.whl (15 kB)
+Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+Using cached urllib3-1.26.18-py2.py3-none-any.whl (143 kB)
+Downloading importlib_metadata-7.1.0-py3-none-any.whl (24 kB)
+Downloading opt_einsum-3.3.0-py3-none-any.whl (65 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.5/65.5 kB 3.3 MB/s eta 0:00:00
+Using cached mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Downloading zipp-3.18.1-py3-none-any.whl (8.2 kB)
+Building wheels for collected packages: antlr4-python3-runtime
+  Building wheel for antlr4-python3-runtime (setup.py) ... done
+  Created wheel for antlr4-python3-runtime: filename=antlr4_python3_runtime-4.9.2-py3-none-any.whl size=144548 sha256=cbcc6675380c3a2ed46bec74bf1611afbb8b053056f824c2752e6cadf90974f6
+  Stored in directory: /Users/riarosenauer/Library/Caches/pip/wheels/0c/dc/1c/57974cae05c0a98c8d8590c471bdd8e953fcf18b14fa0890b7
+Successfully built antlr4-python3-runtime
+Installing collected packages: pytz, openqasm3, mpmath, antlr4-python3-runtime, zipp, xyzservices, urllib3, tzdata, typing-extensions, tornado, tabulate, sympy, six, simplejson, semantic-version, PyYAML, pygments, plotext, pillow, packaging, numpy, networkx, nest-asyncio, mypy-extensions, mdurl, MarkupSafe, llvmlite, jmespath, idna, cloudpickle, charset-normalizer, certifi, boltons, beartype, backports.entry-points-selectable, backoff, annotated-types, scipy, requests, python-dateutil, pydantic-core, opt-einsum, numba, markdown-it-py, juliapkg, Jinja2, importlib-metadata, contourpy, rich, pydantic, pandas, juliacall, botocore, s3transfer, plum-dispatch, openpulse, bokeh, amazon-braket-schemas, oqpy, boto3, amazon-braket-default-simulator, requests-aws-sign, amazon-braket-sdk, requests-sigv4, bloqade
+Successfully installed Jinja2-3.1.3 MarkupSafe-2.1.5 PyYAML-6.0.1 amazon-braket-default-simulator-1.23.2 amazon-braket-schemas-1.21.4 amazon-braket-sdk-1.78.0 annotated-types-0.6.0 antlr4-python3-runtime-4.9.2 backoff-2.2.1 backports.entry-points-selectable-1.3.0 beartype-0.18.5 bloqade-0.15.10 bokeh-3.4.1 boltons-24.0.0 boto3-1.34.98 botocore-1.34.98 certifi-2024.2.2 charset-normalizer-3.3.2 cloudpickle-2.2.1 contourpy-1.2.1 idna-3.7 importlib-metadata-7.1.0 jmespath-1.0.1 juliacall-0.9.20 juliapkg-0.1.11 llvmlite-0.42.0 markdown-it-py-3.0.0 mdurl-0.1.2 mpmath-1.3.0 mypy-extensions-1.0.0 nest-asyncio-1.6.0 networkx-3.2.1 numba-0.59.1 numpy-1.26.4 openpulse-0.5.0 openqasm3-0.5.0 opt-einsum-3.3.0 oqpy-0.3.5 packaging-24.0 pandas-2.2.2 pillow-10.3.0 plotext-5.2.8 plum-dispatch-2.3.5 pydantic-2.7.1 pydantic-core-2.18.2 pygments-2.17.2 python-dateutil-2.9.0.post0 pytz-2024.1 requests-2.31.0 requests-aws-sign-0.1.6 requests-sigv4-0.1.6 rich-13.7.1 s3transfer-0.10.1 scipy-1.13.0 semantic-version-2.10.0 simplejson-3.19.2 six-1.16.0 sympy-1.12 tabulate-0.9.0 tornado-6.4 typing-extensions-4.11.0 tzdata-2024.1 urllib3-1.26.18 xyzservices-2024.4.0 zipp-3.18.1
+(EthQuant) eduroam-hix-dock-1-165:QO2 riarosenauer$ ls
+Untitled.ipynb
+(EthQuant) eduroam-hix-dock-1-165:QO2 riarosenauer$ pwd
+/Users/riarosenauer/Library/Mobile Documents/com~apple~CloudDocs/Ria/Uni/Physik/QO2
+(EthQuant) eduroam-hix-dock-1-165:QO2 riarosenauer$ cd "/Users/riarosenauer/Library/Mobile Documents/com~apple~CloudDocs/Ria/Uni/Hackaton/QuantHack 2024"
+(EthQuant) eduroam-hix-dock-1-165:QuantHack 2024 riarosenauer$ ls
+(EthQuant) eduroam-hix-dock-1-165:QuantHack 2024 riarosenauer$ git clone https://github.com/RiaRosenauer/QuEra_challenge.git
+Klone nach 'QuEra_challenge'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Empfange Objekte: 100% (4/4), fertig.
+(EthQuant) eduroam-hix-dock-1-165:QuantHack 2024 riarosenauer$ ls
+QuEra_challenge
+(EthQuant) eduroam-hix-dock-1-165:QuantHack 2024 riarosenauer$ cd QuEra_challenge/
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ ls
+README.md
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ la
+-bash: la: command not found
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ ls
+Bloqade_tutorial.ipynb	README.md
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ jupyter-notebook
+[I 12:06:09.515 NotebookApp] The port 8888 is already in use, trying another port.
+[I 12:06:09.516 NotebookApp] The port 8889 is already in use, trying another port.
+[I 12:06:09.541 NotebookApp] JupyterLab extension loaded from /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jupyterlab
+[I 12:06:09.541 NotebookApp] JupyterLab application directory is /Library/Frameworks/Python.framework/Versions/3.6/share/jupyter/lab
+[I 12:06:09.543 NotebookApp] Serving notebooks from local directory: /Users/riarosenauer/Library/Mobile Documents/com~apple~CloudDocs/Ria/Uni/Hackaton/QuantHack 2024/QuEra_challenge
+[I 12:06:09.543 NotebookApp] The Jupyter Notebook is running at:
+[I 12:06:09.543 NotebookApp] http://localhost:8890/?token=28f411416c2da2f040da1c20fb08af4a6b22f2048d046778
+[I 12:06:09.543 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 12:06:09.546 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/riarosenauer/Library/Jupyter/runtime/nbserver-91992-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8890/?token=28f411416c2da2f040da1c20fb08af4a6b22f2048d046778
+[W 12:06:10.974 NotebookApp] 404 GET /apple-touch-icon-precomposed.png (::1) 5.55ms referer=None
+[W 12:06:10.976 NotebookApp] 404 GET /apple-touch-icon.png (::1) 0.91ms referer=None
+[W 12:06:13.239 NotebookApp] Notebook Bloqade_tutorial.ipynb is not trusted
+[W 12:06:13.257 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20240504120609 (::1) 3.49ms referer=http://localhost:8890/notebooks/Bloqade_tutorial.ipynb
+[I 12:06:13.599 NotebookApp] Kernel started: 681714aa-4521-4865-9ad4-dabaf0d99b2b
+[W 12:06:13.675 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20240504120609 (::1) 1.51ms referer=http://localhost:8890/notebooks/Bloqade_tutorial.ipynb
+[W 12:06:14.158 NotebookApp] 404 GET /static/components/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf (::1) 1.12ms referer=http://localhost:8890/notebooks/Bloqade_tutorial.ipynb
+^C[I 12:07:10.947 NotebookApp] interrupted
+Serving notebooks from local directory: /Users/riarosenauer/Library/Mobile Documents/com~apple~CloudDocs/Ria/Uni/Hackaton/QuantHack 2024/QuEra_challenge
+1 active kernel
+The Jupyter Notebook is running at:
+http://localhost:8890/?token=28f411416c2da2f040da1c20fb08af4a6b22f2048d046778
+Shutdown this notebook server (y/[n])? y
+[C 12:07:11.985 NotebookApp] Shutdown confirmed
+[I 12:07:11.988 NotebookApp] Shutting down 1 kernel
+[I 12:07:12.198 NotebookApp] Kernel shutdown: 681714aa-4521-4865-9ad4-dabaf0d99b2b
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ conda install ipykernel
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.10.3
+  latest version: 24.4.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /Users/riarosenauer/opt/anaconda3/envs/EthQuant
+
+  added / updated specs:
+    - ipykernel
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    comm-0.2.1                 |   py39hecd8cb5_0          16 KB
+    debugpy-1.6.7              |   py39hcec6c5f_0         1.9 MB
+    exceptiongroup-1.2.0       |   py39hecd8cb5_0          30 KB
+    importlib-metadata-7.0.1   |   py39hecd8cb5_0          42 KB
+    importlib_metadata-7.0.1   |       hd3eb1b0_0           8 KB
+    ipykernel-6.28.0           |   py39hecd8cb5_0         201 KB
+    ipython-8.15.0             |   py39hecd8cb5_0         1.1 MB
+    jupyter_client-8.6.0       |   py39hecd8cb5_0         188 KB
+    jupyter_core-5.5.0         |   py39hecd8cb5_0          78 KB
+    nest-asyncio-1.6.0         |   py39hecd8cb5_0          15 KB
+    packaging-23.2             |   py39hecd8cb5_0         148 KB
+    platformdirs-3.10.0        |   py39hecd8cb5_0          34 KB
+    prompt-toolkit-3.0.43      |   py39hecd8cb5_0         565 KB
+    pygments-2.15.1            |   py39hecd8cb5_1         1.7 MB
+    pyzmq-25.1.2               |   py39hcec6c5f_0         421 KB
+    tornado-6.3.3              |   py39h6c40b1e_0         636 KB
+    traitlets-5.7.1            |   py39hecd8cb5_0         206 KB
+    typing_extensions-4.9.0    |   py39hecd8cb5_1          55 KB
+    zeromq-4.3.5               |       hcec6c5f_0         314 KB
+    zipp-3.17.0                |   py39hecd8cb5_0          23 KB
+    ------------------------------------------------------------
+                                           Total:         7.7 MB
+
+The following NEW packages will be INSTALLED:
+
+  appnope            pkgs/main/osx-64::appnope-0.1.2-py39hecd8cb5_1001
+  asttokens          pkgs/main/noarch::asttokens-2.0.5-pyhd3eb1b0_0
+  backcall           pkgs/main/noarch::backcall-0.2.0-pyhd3eb1b0_0
+  comm               pkgs/main/osx-64::comm-0.2.1-py39hecd8cb5_0
+  debugpy            pkgs/main/osx-64::debugpy-1.6.7-py39hcec6c5f_0
+  decorator          pkgs/main/noarch::decorator-5.1.1-pyhd3eb1b0_0
+  exceptiongroup     pkgs/main/osx-64::exceptiongroup-1.2.0-py39hecd8cb5_0
+  executing          pkgs/main/noarch::executing-0.8.3-pyhd3eb1b0_0
+  importlib-metadata pkgs/main/osx-64::importlib-metadata-7.0.1-py39hecd8cb5_0
+  importlib_metadata pkgs/main/noarch::importlib_metadata-7.0.1-hd3eb1b0_0
+  ipykernel          pkgs/main/osx-64::ipykernel-6.28.0-py39hecd8cb5_0
+  ipython            pkgs/main/osx-64::ipython-8.15.0-py39hecd8cb5_0
+  jedi               pkgs/main/osx-64::jedi-0.18.1-py39hecd8cb5_1
+  jupyter_client     pkgs/main/osx-64::jupyter_client-8.6.0-py39hecd8cb5_0
+  jupyter_core       pkgs/main/osx-64::jupyter_core-5.5.0-py39hecd8cb5_0
+  libsodium          pkgs/main/osx-64::libsodium-1.0.18-h1de35cc_0
+  matplotlib-inline  pkgs/main/osx-64::matplotlib-inline-0.1.6-py39hecd8cb5_0
+  nest-asyncio       pkgs/main/osx-64::nest-asyncio-1.6.0-py39hecd8cb5_0
+  packaging          pkgs/main/osx-64::packaging-23.2-py39hecd8cb5_0
+  parso              pkgs/main/noarch::parso-0.8.3-pyhd3eb1b0_0
+  pexpect            pkgs/main/noarch::pexpect-4.8.0-pyhd3eb1b0_3
+  pickleshare        pkgs/main/noarch::pickleshare-0.7.5-pyhd3eb1b0_1003
+  platformdirs       pkgs/main/osx-64::platformdirs-3.10.0-py39hecd8cb5_0
+  prompt-toolkit     pkgs/main/osx-64::prompt-toolkit-3.0.43-py39hecd8cb5_0
+  psutil             pkgs/main/osx-64::psutil-5.9.0-py39hca72f7f_0
+  ptyprocess         pkgs/main/noarch::ptyprocess-0.7.0-pyhd3eb1b0_2
+  pure_eval          pkgs/main/noarch::pure_eval-0.2.2-pyhd3eb1b0_0
+  pygments           pkgs/main/osx-64::pygments-2.15.1-py39hecd8cb5_1
+  python-dateutil    pkgs/main/noarch::python-dateutil-2.8.2-pyhd3eb1b0_0
+  pyzmq              pkgs/main/osx-64::pyzmq-25.1.2-py39hcec6c5f_0
+  six                pkgs/main/noarch::six-1.16.0-pyhd3eb1b0_1
+  stack_data         pkgs/main/noarch::stack_data-0.2.0-pyhd3eb1b0_0
+  tornado            pkgs/main/osx-64::tornado-6.3.3-py39h6c40b1e_0
+  traitlets          pkgs/main/osx-64::traitlets-5.7.1-py39hecd8cb5_0
+  typing_extensions  pkgs/main/osx-64::typing_extensions-4.9.0-py39hecd8cb5_1
+  wcwidth            pkgs/main/noarch::wcwidth-0.2.5-pyhd3eb1b0_0
+  zeromq             pkgs/main/osx-64::zeromq-4.3.5-hcec6c5f_0
+  zipp               pkgs/main/osx-64::zipp-3.17.0-py39hecd8cb5_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+jupyter_core-5.5.0   | 78 KB     | ########################################################################################################################################################################################################## | 100% 
+exceptiongroup-1.2.0 | 30 KB     | ########################################################################################################################################################################################################## | 100% 
+nest-asyncio-1.6.0   | 15 KB     | ########################################################################################################################################################################################################## | 100% 
+debugpy-1.6.7        | 1.9 MB    | ########################################################################################################################################################################################################## | 100% 
+tornado-6.3.3        | 636 KB    | ########################################################################################################################################################################################################## | 100% 
+platformdirs-3.10.0  | 34 KB     | ########################################################################################################################################################################################################## | 100% 
+ipython-8.15.0       | 1.1 MB    | ########################################################################################################################################################################################################## | 100% 
+zeromq-4.3.5         | 314 KB    | ########################################################################################################################################################################################################## | 100% 
+packaging-23.2       | 148 KB    | ########################################################################################################################################################################################################## | 100% 
+importlib-metadata-7 | 42 KB     | ########################################################################################################################################################################################################## | 100% 
+pyzmq-25.1.2         | 421 KB    | ########################################################################################################################################################################################################## | 100% 
+importlib_metadata-7 | 8 KB      | ########################################################################################################################################################################################################## | 100% 
+typing_extensions-4. | 55 KB     | ########################################################################################################################################################################################################## | 100% 
+zipp-3.17.0          | 23 KB     | ########################################################################################################################################################################################################## | 100% 
+pygments-2.15.1      | 1.7 MB    | ########################################################################################################################################################################################################## | 100% 
+ipykernel-6.28.0     | 201 KB    | ########################################################################################################################################################################################################## | 100% 
+comm-0.2.1           | 16 KB     | ########################################################################################################################################################################################################## | 100% 
+jupyter_client-8.6.0 | 188 KB    | ########################################################################################################################################################################################################## | 100% 
+prompt-toolkit-3.0.4 | 565 KB    | ########################################################################################################################################################################################################## | 100% 
+traitlets-5.7.1      | 206 KB    | ########################################################################################################################################################################################################## | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ ipython kernel install --user --name=EthQuant
+Installed kernelspec EthQuant in /Users/riarosenauer/Library/Jupyter/kernels/ethquant
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ jupyter-notebook
+[I 12:07:55.140 NotebookApp] The port 8888 is already in use, trying another port.
+[I 12:07:55.141 NotebookApp] The port 8889 is already in use, trying another port.
+[I 12:07:55.164 NotebookApp] JupyterLab extension loaded from /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jupyterlab
+[I 12:07:55.164 NotebookApp] JupyterLab application directory is /Library/Frameworks/Python.framework/Versions/3.6/share/jupyter/lab
+[I 12:07:55.165 NotebookApp] Serving notebooks from local directory: /Users/riarosenauer/Library/Mobile Documents/com~apple~CloudDocs/Ria/Uni/Hackaton/QuantHack 2024/QuEra_challenge
+[I 12:07:55.165 NotebookApp] The Jupyter Notebook is running at:
+[I 12:07:55.165 NotebookApp] http://localhost:8890/?token=d3c6c1b93b2ab225cbc5f267c99bdf3994163a87a3c0ac73
+[I 12:07:55.165 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 12:07:55.168 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/riarosenauer/Library/Jupyter/runtime/nbserver-92556-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8890/?token=d3c6c1b93b2ab225cbc5f267c99bdf3994163a87a3c0ac73
+[W 12:08:00.479 NotebookApp] Notebook Bloqade_tutorial.ipynb is not trusted
+[W 12:08:00.499 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20240504120755 (::1) 5.92ms referer=http://localhost:8890/notebooks/Bloqade_tutorial.ipynb
+[I 12:08:00.838 NotebookApp] Kernel started: 903f50d8-f31f-42ed-9f8d-ff4f6e3fb1be
+[W 12:08:00.893 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20240504120755 (::1) 1.16ms referer=http://localhost:8890/notebooks/Bloqade_tutorial.ipynb
+[W 12:08:01.374 NotebookApp] 404 GET /static/components/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf (::1) 1.29ms referer=http://localhost:8890/notebooks/Bloqade_tutorial.ipynb
+[I 12:08:05.677 NotebookApp] Starting buffering for 903f50d8-f31f-42ed-9f8d-ff4f6e3fb1be:a91d50512a2c4c648a758efc8e22a109
+[I 12:08:05.888 NotebookApp] Kernel shutdown: 903f50d8-f31f-42ed-9f8d-ff4f6e3fb1be
+[I 12:08:05.910 NotebookApp] Kernel started: b3e27550-f36e-4d15-af29-d65c93610f29
+[I 12:08:13.562 NotebookApp] Saving file at /Bloqade_tutorial.ipynb
+[W 12:08:13.563 NotebookApp] Notebook Bloqade_tutorial.ipynb is not trusted
+[W 12:08:15.614 NotebookApp] 404 GET /api/kernels/681714aa-4521-4865-9ad4-dabaf0d99b2b/channels?session_id=bf3f123bec3e42129fc975748abab0cc (::1): Kernel does not exist: 681714aa-4521-4865-9ad4-dabaf0d99b2b
+[W 12:08:15.615 NotebookApp] 404 GET /api/kernels/681714aa-4521-4865-9ad4-dabaf0d99b2b/channels?session_id=bf3f123bec3e42129fc975748abab0cc (::1) 2.42ms referer=None
+[W 12:08:37.471 NotebookApp] Notebook Bloqade_tutorial.ipynb is not trusted
+[W 12:08:37.489 NotebookApp] Trusting notebook /Bloqade_tutorial.ipynb
+[I 12:08:39.317 NotebookApp] Starting buffering for b3e27550-f36e-4d15-af29-d65c93610f29:a91d50512a2c4c648a758efc8e22a109
+[W 12:08:39.401 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20240504120755 (::1) 1.54ms referer=http://localhost:8890/notebooks/Bloqade_tutorial.ipynb
+[W 12:08:39.753 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20240504120755 (::1) 4.84ms referer=http://localhost:8890/notebooks/Bloqade_tutorial.ipynb
+[W 12:08:40.226 NotebookApp] 404 GET /static/components/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf (::1) 2.33ms referer=http://localhost:8890/notebooks/Bloqade_tutorial.ipynb
+^C[I 12:08:58.361 NotebookApp] interrupted
+Serving notebooks from local directory: /Users/riarosenauer/Library/Mobile Documents/com~apple~CloudDocs/Ria/Uni/Hackaton/QuantHack 2024/QuEra_challenge
+1 active kernel
+The Jupyter Notebook is running at:
+http://localhost:8890/?token=d3c6c1b93b2ab225cbc5f267c99bdf3994163a87a3c0ac73
+Shutdown this notebook server (y/[n])? y
+[C 12:08:59.426 NotebookApp] Shutdown confirmed
+[I 12:08:59.428 NotebookApp] Shutting down 1 kernel
+[I 12:08:59.635 NotebookApp] Kernel shutdown: b3e27550-f36e-4d15-af29-d65c93610f29
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ conda install matplotlib
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.10.3
+  latest version: 24.4.0
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /Users/riarosenauer/opt/anaconda3/envs/EthQuant
+
+  added / updated specs:
+    - matplotlib
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    brotli-1.0.9               |       h6c40b1e_8          20 KB
+    brotli-bin-1.0.9           |       h6c40b1e_8          17 KB
+    contourpy-1.2.0            |   py39ha357a0b_0         241 KB
+    fonttools-4.51.0           |   py39h6c40b1e_0         2.4 MB
+    importlib_resources-6.1.1  |   py39hecd8cb5_1          54 KB
+    intel-openmp-2023.1.0      |   ha357a0b_43548         638 KB
+    kiwisolver-1.4.4           |   py39hcec6c5f_0          63 KB
+    libbrotlicommon-1.0.9      |       h6c40b1e_8          68 KB
+    libbrotlidec-1.0.9         |       h6c40b1e_8          31 KB
+    libbrotlienc-1.0.9         |       h6c40b1e_8         300 KB
+    lz4-c-1.9.4                |       hcec6c5f_1         167 KB
+    matplotlib-3.8.4           |   py39hecd8cb5_0           9 KB
+    matplotlib-base-3.8.4      |   py39hb47e01b_0         6.8 MB
+    mkl-2023.1.0               |   h8e150cf_43560       181.0 MB
+    mkl_fft-1.3.8              |   py39h6c40b1e_0         195 KB
+    mkl_random-1.2.4           |   py39ha357a0b_0         271 KB
+    numpy-1.26.4               |   py39h827a554_0          12 KB
+    numpy-base-1.26.4          |   py39ha186be2_0         6.7 MB
+    pillow-10.3.0              |   py39h6c40b1e_0         737 KB
+    pyparsing-3.0.9            |   py39hecd8cb5_0         149 KB
+    unicodedata2-15.1.0        |   py39h6c40b1e_0         517 KB
+    zstd-1.5.5                 |       hc035e20_2         599 KB
+    ------------------------------------------------------------
+                                           Total:       200.9 MB
+
+The following NEW packages will be INSTALLED:
+
+  blas               pkgs/main/osx-64::blas-1.0-mkl
+  brotli             pkgs/main/osx-64::brotli-1.0.9-h6c40b1e_8
+  brotli-bin         pkgs/main/osx-64::brotli-bin-1.0.9-h6c40b1e_8
+  contourpy          pkgs/main/osx-64::contourpy-1.2.0-py39ha357a0b_0
+  cycler             pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0
+  fonttools          pkgs/main/osx-64::fonttools-4.51.0-py39h6c40b1e_0
+  freetype           pkgs/main/osx-64::freetype-2.12.1-hd8bbffd_0
+  importlib_resourc~ pkgs/main/osx-64::importlib_resources-6.1.1-py39hecd8cb5_1
+  intel-openmp       pkgs/main/osx-64::intel-openmp-2023.1.0-ha357a0b_43548
+  jpeg               pkgs/main/osx-64::jpeg-9e-h6c40b1e_1
+  kiwisolver         pkgs/main/osx-64::kiwisolver-1.4.4-py39hcec6c5f_0
+  lcms2              pkgs/main/osx-64::lcms2-2.12-hf1fd2bf_0
+  lerc               pkgs/main/osx-64::lerc-3.0-he9d5cce_0
+  libbrotlicommon    pkgs/main/osx-64::libbrotlicommon-1.0.9-h6c40b1e_8
+  libbrotlidec       pkgs/main/osx-64::libbrotlidec-1.0.9-h6c40b1e_8
+  libbrotlienc       pkgs/main/osx-64::libbrotlienc-1.0.9-h6c40b1e_8
+  libdeflate         pkgs/main/osx-64::libdeflate-1.17-hb664fd8_1
+  libpng             pkgs/main/osx-64::libpng-1.6.39-h6c40b1e_0
+  libtiff            pkgs/main/osx-64::libtiff-4.5.1-hcec6c5f_0
+  libwebp-base       pkgs/main/osx-64::libwebp-base-1.3.2-h6c40b1e_0
+  lz4-c              pkgs/main/osx-64::lz4-c-1.9.4-hcec6c5f_1
+  matplotlib         pkgs/main/osx-64::matplotlib-3.8.4-py39hecd8cb5_0
+  matplotlib-base    pkgs/main/osx-64::matplotlib-base-3.8.4-py39hb47e01b_0
+  mkl                pkgs/main/osx-64::mkl-2023.1.0-h8e150cf_43560
+  mkl-service        pkgs/main/osx-64::mkl-service-2.4.0-py39h6c40b1e_1
+  mkl_fft            pkgs/main/osx-64::mkl_fft-1.3.8-py39h6c40b1e_0
+  mkl_random         pkgs/main/osx-64::mkl_random-1.2.4-py39ha357a0b_0
+  numpy              pkgs/main/osx-64::numpy-1.26.4-py39h827a554_0
+  numpy-base         pkgs/main/osx-64::numpy-base-1.26.4-py39ha186be2_0
+  openjpeg           pkgs/main/osx-64::openjpeg-2.4.0-h66ea3da_0
+  pillow             pkgs/main/osx-64::pillow-10.3.0-py39h6c40b1e_0
+  pyparsing          pkgs/main/osx-64::pyparsing-3.0.9-py39hecd8cb5_0
+  tbb                pkgs/main/osx-64::tbb-2021.8.0-ha357a0b_0
+  unicodedata2       pkgs/main/osx-64::unicodedata2-15.1.0-py39h6c40b1e_0
+  zstd               pkgs/main/osx-64::zstd-1.5.5-hc035e20_2
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+lz4-c-1.9.4          | 167 KB    | ########################################################################################################################################################################################################## | 100% 
+kiwisolver-1.4.4     | 63 KB     | ########################################################################################################################################################################################################## | 100% 
+mkl_random-1.2.4     | 271 KB    | ########################################################################################################################################################################################################## | 100% 
+zstd-1.5.5           | 599 KB    | ########################################################################################################################################################################################################## | 100% 
+numpy-1.26.4         | 12 KB     | ########################################################################################################################################################################################################## | 100% 
+libbrotlicommon-1.0. | 68 KB     | ########################################################################################################################################################################################################## | 100% 
+intel-openmp-2023.1. | 638 KB    | ########################################################################################################################################################################################################## | 100% 
+matplotlib-base-3.8. | 6.8 MB    | ########################################################################################################################################################################################################## | 100% 
+unicodedata2-15.1.0  | 517 KB    | ########################################################################################################################################################################################################## | 100% 
+importlib_resources- | 54 KB     | ########################################################################################################################################################################################################## | 100% 
+contourpy-1.2.0      | 241 KB    | ########################################################################################################################################################################################################## | 100% 
+fonttools-4.51.0     | 2.4 MB    | ########################################################################################################################################################################################################## | 100% 
+matplotlib-3.8.4     | 9 KB      | ########################################################################################################################################################################################################## | 100% 
+mkl_fft-1.3.8        | 195 KB    | ########################################################################################################################################################################################################## | 100% 
+pyparsing-3.0.9      | 149 KB    | ########################################################################################################################################################################################################## | 100% 
+libbrotlienc-1.0.9   | 300 KB    | ########################################################################################################################################################################################################## | 100% 
+mkl-2023.1.0         | 181.0 MB  | ########################################################################################################################################################################################################## | 100% 
+brotli-bin-1.0.9     | 17 KB     | ########################################################################################################################################################################################################## | 100% 
+libbrotlidec-1.0.9   | 31 KB     | ########################################################################################################################################################################################################## | 100% 
+brotli-1.0.9         | 20 KB     | ########################################################################################################################################################################################################## | 100% 
+numpy-base-1.26.4    | 6.7 MB    | ########################################################################################################################################################################################################## | 100% 
+pillow-10.3.0        | 737 KB    | ########################################################################################################################################################################################################## | 100% 
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ jupyter-notebook
+[I 12:09:25.223 NotebookApp] The port 8888 is already in use, trying another port.
+[I 12:09:25.224 NotebookApp] The port 8889 is already in use, trying another port.
+[I 12:09:25.247 NotebookApp] JupyterLab extension loaded from /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jupyterlab
+[I 12:09:25.247 NotebookApp] JupyterLab application directory is /Library/Frameworks/Python.framework/Versions/3.6/share/jupyter/lab
+[I 12:09:25.248 NotebookApp] Serving notebooks from local directory: /Users/riarosenauer/Library/Mobile Documents/com~apple~CloudDocs/Ria/Uni/Hackaton/QuantHack 2024/QuEra_challenge
+[I 12:09:25.248 NotebookApp] The Jupyter Notebook is running at:
+[I 12:09:25.249 NotebookApp] http://localhost:8890/?token=5e60abe99b3a23510844cd29423774e2098ea5b6ab42ac56
+[I 12:09:25.249 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 12:09:25.252 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/riarosenauer/Library/Jupyter/runtime/nbserver-93155-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8890/?token=5e60abe99b3a23510844cd29423774e2098ea5b6ab42ac56
+[W 12:09:28.382 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20240504120925 (::1) 4.69ms referer=http://localhost:8890/notebooks/Bloqade_tutorial.ipynb
+[I 12:09:28.708 NotebookApp] Kernel started: 171aeca8-528a-4b73-a7f5-dba9982e359c
+[W 12:09:28.778 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20240504120925 (::1) 1.33ms referer=http://localhost:8890/notebooks/Bloqade_tutorial.ipynb
+[W 12:09:29.288 NotebookApp] 404 GET /static/components/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf (::1) 2.71ms referer=http://localhost:8890/notebooks/Bloqade_tutorial.ipynb
+[I 12:09:33.755 NotebookApp] Starting buffering for 171aeca8-528a-4b73-a7f5-dba9982e359c:dfd03f4d84304cf29082fa112d9e3c13
+[I 12:09:33.973 NotebookApp] Kernel shutdown: 171aeca8-528a-4b73-a7f5-dba9982e359c
+[I 12:09:34.004 NotebookApp] Kernel started: a23087a8-63ad-4901-9923-dbe028032dc0
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+[I 12:11:28.698 NotebookApp] Saving file at /Bloqade_tutorial.ipynb
+[I 12:13:03.733 NotebookApp] Starting buffering for a23087a8-63ad-4901-9923-dbe028032dc0:dfd03f4d84304cf29082fa112d9e3c13
+[I 12:13:08.200 NotebookApp] Copying Bloqade_tutorial.ipynb to 
+[W 12:13:10.186 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20240504120925 (::1) 1.52ms referer=http://localhost:8890/notebooks/Bloqade_tutorial-Copy1.ipynb
+[I 12:13:10.468 NotebookApp] Kernel started: eafdc667-8924-462f-8fa8-31cf35a2af92
+[W 12:13:10.520 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20240504120925 (::1) 1.22ms referer=http://localhost:8890/notebooks/Bloqade_tutorial-Copy1.ipynb
+[W 12:13:11.741 NotebookApp] 404 GET /static/components/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf (::1) 2.78ms referer=http://localhost:8890/notebooks/Bloqade_tutorial-Copy1.ipynb
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+[I 12:15:10.426 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 12:26:09.860 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 12:28:09.900 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 12:30:09.924 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 12:32:09.950 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 12:36:10.003 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 12:38:10.040 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 12:39:44.262 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 12:40:10.064 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 12:42:10.131 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 12:44:10.133 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:00:13.070 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:02:13.091 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:02:48.950 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:04:13.118 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:06:13.183 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:08:13.173 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:10:13.210 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:10:43.063 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:32:14.843 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:40:14.949 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:42:14.973 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:44:15.045 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:46:15.086 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:46:37.326 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:56:15.235 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 13:58:15.268 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:04:35.160 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:06:35.183 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:08:35.260 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:18:35.436 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:20:35.466 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:24:35.811 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:26:35.837 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:28:35.868 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:30:35.901 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:32:35.926 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:34:35.957 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:36:35.976 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:38:36.022 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:40:36.072 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:42:36.161 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:44:36.167 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:46:36.211 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:50:36.267 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:52:36.337 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:54:36.321 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:56:36.356 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 14:58:36.368 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 15:00:36.436 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+[I 15:02:36.429 NotebookApp] Saving file at /Bloqade_playing_around_1.ipynb
+^C[I 17:04:04.809 NotebookApp] interrupted
+Serving notebooks from local directory: /Users/riarosenauer/Library/Mobile Documents/com~apple~CloudDocs/Ria/Uni/Hackaton/QuantHack 2024/QuEra_challenge
+2 active kernels
+The Jupyter Notebook is running at:
+http://localhost:8890/?token=5e60abe99b3a23510844cd29423774e2098ea5b6ab42ac56
+Shutdown this notebook server (y/[n])? y
+[C 17:04:06.274 NotebookApp] Shutdown confirmed
+[I 17:04:06.279 NotebookApp] Shutting down 2 kernels
+[I 17:04:06.595 NotebookApp] Kernel shutdown: a23087a8-63ad-4901-9923-dbe028032dc0
+[I 17:04:07.017 NotebookApp] Kernel shutdown: eafdc667-8924-462f-8fa8-31cf35a2af92
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git commit -m "test"
+Auf Branch main
+Ihr Branch ist auf demselben Stand wie 'origin/main'.
+
+Unversionierte Dateien:
+  (benutzen Sie "git add <Datei>...", um die Änderungen zum Commit vorzumerken)
+	Bloqade_playing_around_1.ipynb
+	Bloqade_tutorial.ipynb
+
+nichts zum Commit vorgemerkt, aber es gibt unversionierte Dateien
+(benutzen Sie "git add" zum Versionieren)
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git add *
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git add *.*
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git commit -m "test"
+[main 690f465] test
+ 2 files changed, 2777 insertions(+)
+ create mode 100644 Bloqade_playing_around_1.ipynb
+ create mode 100644 Bloqade_tutorial.ipynb
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git push
+Objekte aufzählen: 5, fertig.
+Zähle Objekte: 100% (5/5), fertig.
+Delta-Kompression verwendet bis zu 12 Threads.
+Komprimiere Objekte: 100% (4/4), fertig.
+Schreibe Objekte: 100% (4/4), 133.07 KiB | 12.10 MiB/s, fertig.
+Gesamt 4 (Delta 1), Wiederverwendet 0 (Delta 0), Pack wiederverwendet 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/RiaRosenauer/QuEra_challenge.git
+   0c17e6f..690f465  main -> main
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ jupyter-notebook
+[I 17:08:46.251 NotebookApp] The port 8888 is already in use, trying another port.
+[I 17:08:46.251 NotebookApp] The port 8889 is already in use, trying another port.
+[I 17:08:46.275 NotebookApp] JupyterLab extension loaded from /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jupyterlab
+[I 17:08:46.275 NotebookApp] JupyterLab application directory is /Library/Frameworks/Python.framework/Versions/3.6/share/jupyter/lab
+[I 17:08:46.276 NotebookApp] Serving notebooks from local directory: /Users/riarosenauer/Library/Mobile Documents/com~apple~CloudDocs/Ria/Uni/Hackaton/QuantHack 2024/QuEra_challenge
+[I 17:08:46.276 NotebookApp] The Jupyter Notebook is running at:
+[I 17:08:46.276 NotebookApp] http://localhost:8890/?token=1a28eb72c2c20a1b6877e50c033d4de23a43d102e9b74b43
+[I 17:08:46.276 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 17:08:46.280 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/riarosenauer/Library/Jupyter/runtime/nbserver-17268-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8890/?token=1a28eb72c2c20a1b6877e50c033d4de23a43d102e9b74b43
+[I 17:08:52.065 NotebookApp] Creating new notebook in 
+[I 17:08:52.509 NotebookApp] Kernel started: b5634116-5a5f-4f45-a70b-4f077bb71f34
+[W 17:08:52.523 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20240504170846 (::1) 8.66ms referer=http://localhost:8890/notebooks/Untitled.ipynb?kernel_name=ethquant
+[I 17:09:37.838 NotebookApp] Saving file at /Test.ipynb
+[I 17:12:52.496 NotebookApp] Saving file at /Test.ipynb
+[I 17:26:24.603 NotebookApp] Saving file at /Test.ipynb
+[I 17:28:24.637 NotebookApp] Saving file at /Test.ipynb
+[I 17:28:54.276 NotebookApp] Saving file at /Test.ipynb
+[I 17:28:54.503 NotebookApp] Saving file at /Test.ipynb
+[I 17:28:54.663 NotebookApp] Saving file at /Test.ipynb
+[I 17:28:54.847 NotebookApp] Saving file at /Test.ipynb
+[W 17:29:11.650 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20240504170846 (::1) 4.95ms referer=http://localhost:8890/notebooks/Bloqade_playing_around_1.ipynb
+[I 17:29:12.026 NotebookApp] Kernel started: 24896843-6015-4d61-952b-f60623cc6ab1
+[W 17:29:13.725 NotebookApp] 404 GET /static/components/MathJax/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf (::1) 2.81ms referer=http://localhost:8890/notebooks/Bloqade_playing_around_1.ipynb
+[I 17:29:41.650 NotebookApp] Saving file at /Test.ipynb
+[I 17:29:41.854 NotebookApp] Saving file at /Test.ipynb
+[I 17:29:42.115 NotebookApp] Saving file at /Test.ipynb
+[I 17:29:42.319 NotebookApp] Saving file at /Test.ipynb
+[I 17:29:42.640 NotebookApp] Saving file at /Test.ipynb
+[I 17:29:42.854 NotebookApp] Saving file at /Test.ipynb
+[I 17:29:43.089 NotebookApp] Saving file at /Test.ipynb
+[I 17:29:43.259 NotebookApp] Saving file at /Test.ipynb
+[I 17:29:43.428 NotebookApp] Saving file at /Test.ipynb
+[I 17:29:43.620 NotebookApp] Saving file at /Test.ipynb
+[I 17:29:43.807 NotebookApp] Saving file at /Test.ipynb
+[I 17:29:44.117 NotebookApp] Saving file at /Test.ipynb
+[I 17:29:44.286 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:24.648 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:25.955 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:26.173 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:26.325 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:26.499 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:27.769 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:44.347 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:44.532 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:44.709 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:44.854 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:45.074 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:45.392 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:45.588 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:45.721 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:45.913 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:46.074 NotebookApp] Saving file at /Test.ipynb
+[I 17:30:46.259 NotebookApp] Saving file at /Test.ipynb
+[I 17:42:11.132 NotebookApp] Saving file at /Test.ipynb
+[I 17:42:23.737 NotebookApp] Saving file at /Test.ipynb
+[I 17:45:49.952 NotebookApp] Saving file at /Test.ipynb
+[I 17:45:51.726 NotebookApp] Saving file at /Test.ipynb
+[I 19:02:20.147 NotebookApp] Saving file at /Test.ipynb
+[I 19:06:20.198 NotebookApp] Saving file at /Test.ipynb
+[I 19:08:20.223 NotebookApp] Saving file at /Test.ipynb
+[I 19:10:20.261 NotebookApp] Saving file at /Test.ipynb
+[I 19:12:20.284 NotebookApp] Saving file at /Test.ipynb
+[I 19:14:20.362 NotebookApp] Saving file at /Test.ipynb
+[I 19:45:52.467 NotebookApp] Saving file at /Test.ipynb
+[I 19:47:52.462 NotebookApp] Saving file at /Test.ipynb
+[I 19:49:23.763 NotebookApp] Saving file at /Test.ipynb
+[I 19:49:23.948 NotebookApp] Saving file at /Test.ipynb
+[I 19:49:24.127 NotebookApp] Saving file at /Test.ipynb
+[I 19:49:24.267 NotebookApp] Saving file at /Test.ipynb
+[I 19:49:48.658 NotebookApp] Saving file at /Test.ipynb
+[I 19:49:48.845 NotebookApp] Saving file at /Test.ipynb
+[I 19:49:49.031 NotebookApp] Saving file at /Test.ipynb
+[I 19:49:49.229 NotebookApp] Saving file at /Test.ipynb
+[I 19:50:55.673 NotebookApp] Saving file at /Test.ipynb
+[I 19:51:34.621 NotebookApp] Saving file at /Test.ipynb
+[I 19:51:46.519 NotebookApp] Saving file at /Test.ipynb
+[I 19:51:46.913 NotebookApp] Saving file at /Test.ipynb
+[I 19:51:47.097 NotebookApp] Saving file at /Test.ipynb
+[I 19:51:47.264 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:19.492 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:19.698 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:19.879 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:20.024 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:20.179 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:31.470 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:40.308 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:42.533 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:45.208 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:45.398 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:45.611 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:45.791 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:52.538 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:53.885 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:54.205 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:54.398 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:54.607 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:54.827 NotebookApp] Saving file at /Test.ipynb
+[I 19:53:55.034 NotebookApp] Saving file at /Test.ipynb
+[I 19:55:35.255 NotebookApp] Saving file at /Test.ipynb
+[I 19:55:39.496 NotebookApp] Saving file at /Test.ipynb
+[I 19:55:39.719 NotebookApp] Saving file at /Test.ipynb
+[I 19:55:39.950 NotebookApp] Saving file at /Test.ipynb
+[I 19:55:40.170 NotebookApp] Saving file at /Test.ipynb
+[I 19:55:40.395 NotebookApp] Saving file at /Test.ipynb
+[I 19:55:40.535 NotebookApp] Saving file at /Test.ipynb
+[I 19:55:40.757 NotebookApp] Saving file at /Test.ipynb
+[I 19:55:40.927 NotebookApp] Saving file at /Test.ipynb
+[I 19:55:41.098 NotebookApp] Saving file at /Test.ipynb
+[I 19:56:03.250 NotebookApp] Saving file at /Test.ipynb
+[I 19:56:03.541 NotebookApp] Saving file at /Test.ipynb
+[I 19:56:03.774 NotebookApp] Saving file at /Test.ipynb
+[I 19:57:52.600 NotebookApp] Saving file at /Test.ipynb
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+[I 19:58:41.827 NotebookApp] Saving file at /Test.ipynb
+[I 19:58:42.035 NotebookApp] Saving file at /Test.ipynb
+[I 19:59:52.382 NotebookApp] Saving file at /Test.ipynb
+[I 19:59:52.529 NotebookApp] Saving file at /Test.ipynb
+[I 20:01:52.679 NotebookApp] Saving file at /Test.ipynb
+[I 20:03:16.005 NotebookApp] Saving file at /Test.ipynb
+[I 20:03:52.687 NotebookApp] Saving file at /Test.ipynb
+[I 20:05:52.729 NotebookApp] Saving file at /Test.ipynb
+[I 20:07:05.921 NotebookApp] Saving file at /Test.ipynb
+[I 20:07:06.090 NotebookApp] Saving file at /Test.ipynb
+[I 20:07:20.239 NotebookApp] Saving file at /Test.ipynb
+[I 20:07:44.046 NotebookApp] Saving file at /Test.ipynb
+[I 20:07:52.748 NotebookApp] Saving file at /Test.ipynb
+[I 20:09:52.787 NotebookApp] Saving file at /Test.ipynb
+[I 20:13:52.871 NotebookApp] Saving file at /Test.ipynb
+[I 20:22:01.900 NotebookApp] Saving file at /Test.ipynb
+[I 20:22:14.278 NotebookApp] Saving file at /Test.ipynb
+[I 20:22:14.519 NotebookApp] Saving file at /Test.ipynb
+[I 20:22:19.505 NotebookApp] Saving file at /Test.ipynb
+[I 20:22:37.693 NotebookApp] Saving file at /Test.ipynb
+[I 20:22:37.887 NotebookApp] Saving file at /Test.ipynb
+[I 20:22:38.043 NotebookApp] Saving file at /Test.ipynb
+[I 20:23:53.056 NotebookApp] Saving file at /Test.ipynb
+[I 20:24:50.329 NotebookApp] Saving file at /Test.ipynb
+[I 20:24:51.171 NotebookApp] Saving file at /Test.ipynb
+[I 20:24:58.966 NotebookApp] Saving file at /Test.ipynb
+[I 20:24:59.177 NotebookApp] Saving file at /Test.ipynb
+[I 20:24:59.374 NotebookApp] Saving file at /Test.ipynb
+[I 20:24:59.511 NotebookApp] Saving file at /Test.ipynb
+[I 20:24:59.670 NotebookApp] Saving file at /Test.ipynb
+[I 20:25:19.172 NotebookApp] Saving file at /Test.ipynb
+[I 20:25:19.395 NotebookApp] Saving file at /Test.ipynb
+[I 20:25:19.573 NotebookApp] Saving file at /Test.ipynb
+[I 20:25:53.043 NotebookApp] Saving file at /Test.ipynb
+[I 20:27:53.092 NotebookApp] Saving file at /Test.ipynb
+[I 20:30:39.025 NotebookApp] Saving file at /Test.ipynb
+[I 20:30:39.288 NotebookApp] Saving file at /Test.ipynb
+[I 20:30:39.524 NotebookApp] Saving file at /Test.ipynb
+[I 20:31:53.138 NotebookApp] Saving file at /Test.ipynb
+[I 20:33:52.477 NotebookApp] Saving file at /Test.ipynb
+[I 20:33:52.684 NotebookApp] Saving file at /Test.ipynb
+[I 20:33:52.827 NotebookApp] Saving file at /Test.ipynb
+[I 20:34:29.285 NotebookApp] Saving file at /Test.ipynb
+[I 20:34:29.487 NotebookApp] Saving file at /Test.ipynb
+[I 20:34:29.642 NotebookApp] Saving file at /Test.ipynb
+[I 20:34:37.570 NotebookApp] Saving file at /Test.ipynb
+[I 20:34:37.788 NotebookApp] Saving file at /Test.ipynb
+[I 20:34:37.954 NotebookApp] Saving file at /Test.ipynb
+[I 20:34:38.121 NotebookApp] Saving file at /Test.ipynb
+[I 20:35:53.256 NotebookApp] Saving file at /Test.ipynb
+[I 20:37:53.288 NotebookApp] Saving file at /Test.ipynb
+[I 20:39:19.783 NotebookApp] Saving file at /Test.ipynb
+[I 20:39:20.124 NotebookApp] Saving file at /Test.ipynb
+[I 20:39:20.267 NotebookApp] Saving file at /Test.ipynb
+[I 20:39:20.413 NotebookApp] Saving file at /Test.ipynb
+[I 20:39:53.257 NotebookApp] Saving file at /Test.ipynb
+[I 20:41:28.308 NotebookApp] Kernel interrupted: b5634116-5a5f-4f45-a70b-4f077bb71f34
+capi_return is NULL
+Call-back cb_fcn_in___user__routines failed.
+Fatal Python error: F2PySwapThreadLocalCallbackPtr: F2PySwapThreadLocalCallbackPtr: PyLong_AsVoidPtr failed
+Python runtime state: initialized
+[I 20:41:28.509 NotebookApp] KernelRestarter: restarting kernel (1/5), keep random ports
+kernel b5634116-5a5f-4f45-a70b-4f077bb71f34 restarted
+[I 20:41:53.281 NotebookApp] Saving file at /Test.ipynb
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+[I 20:43:53.369 NotebookApp] Saving file at /Test.ipynb
+[I 20:44:37.670 NotebookApp] Kernel interrupted: b5634116-5a5f-4f45-a70b-4f077bb71f34
+capi_return is NULL
+Call-back cb_fcn_in___user__routines failed.
+Fatal Python error: F2PySwapThreadLocalCallbackPtr: F2PySwapThreadLocalCallbackPtr: PyLong_AsVoidPtr failed
+Python runtime state: initialized
+[I 20:44:40.534 NotebookApp] KernelRestarter: restarting kernel (1/5), keep random ports
+kernel b5634116-5a5f-4f45-a70b-4f077bb71f34 restarted
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+[I 20:45:53.344 NotebookApp] Saving file at /Test.ipynb
+[I 20:46:38.515 NotebookApp] Kernel interrupted: b5634116-5a5f-4f45-a70b-4f077bb71f34
+capi_return is NULL
+Call-back cb_fcn_in___user__routines failed.
+Fatal Python error: F2PySwapThreadLocalCallbackPtr: F2PySwapThreadLocalCallbackPtr: PyLong_AsVoidPtr failed
+Python runtime state: initialized
+[I 20:46:40.559 NotebookApp] KernelRestarter: restarting kernel (1/5), keep random ports
+kernel b5634116-5a5f-4f45-a70b-4f077bb71f34 restarted
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+[I 20:47:53.396 NotebookApp] Saving file at /Test.ipynb
+[I 20:49:53.448 NotebookApp] Saving file at /Test.ipynb
+[I 20:50:23.073 NotebookApp] Saving file at /Test.ipynb
+[I 20:51:44.811 NotebookApp] Saving file at /Test.ipynb
+[I 20:51:44.924 NotebookApp] Saving file at /Test.ipynb
+[I 20:51:45.091 NotebookApp] Saving file at /Test.ipynb
+[I 20:51:45.214 NotebookApp] Saving file at /Test.ipynb
+[I 20:53:53.222 NotebookApp] Saving file at /Test.ipynb
+[I 20:55:53.547 NotebookApp] Saving file at /Test.ipynb
+[I 20:57:53.559 NotebookApp] Saving file at /Test.ipynb
+[I 20:59:53.556 NotebookApp] Saving file at /Test.ipynb
+[I 21:00:13.498 NotebookApp] Kernel interrupted: b5634116-5a5f-4f45-a70b-4f077bb71f34
+capi_return is NULL
+Call-back cb_fcn_in___user__routines failed.
+Fatal Python error: F2PySwapThreadLocalCallbackPtr: F2PySwapThreadLocalCallbackPtr: PyLong_AsVoidPtr failed
+Python runtime state: initialized
+[I 21:00:13.570 NotebookApp] KernelRestarter: restarting kernel (1/5), keep random ports
+kernel b5634116-5a5f-4f45-a70b-4f077bb71f34 restarted
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+[I 21:01:53.630 NotebookApp] Saving file at /Test.ipynb
+[I 21:04:54.490 NotebookApp] Kernel interrupted: b5634116-5a5f-4f45-a70b-4f077bb71f34
+capi_return is NULL
+Call-back cb_fcn_in___user__routines failed.
+Fatal Python error: F2PySwapThreadLocalCallbackPtr: F2PySwapThreadLocalCallbackPtr: PyLong_AsVoidPtr failed
+Python runtime state: initialized
+[I 21:04:55.582 NotebookApp] KernelRestarter: restarting kernel (1/5), keep random ports
+kernel b5634116-5a5f-4f45-a70b-4f077bb71f34 restarted
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+[I 21:05:53.643 NotebookApp] Saving file at /Test.ipynb
+[I 21:06:27.688 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:06:27.866 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:06:28.017 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:06:28.157 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:07:06.262 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:07:06.456 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:07:06.633 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:07:06.822 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:07:06.979 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:07:07.152 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:07:07.274 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:07:07.411 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:07:25.730 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:07:25.962 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:07:26.148 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:07:27.805 NotebookApp] Saving file at /parameter_sweep.ipynb
+^C[I 21:07:34.294 NotebookApp] interrupted
+Serving notebooks from local directory: /Users/riarosenauer/Library/Mobile Documents/com~apple~CloudDocs/Ria/Uni/Hackaton/QuantHack 2024/QuEra_challenge
+2 active kernels
+The Jupyter Notebook is running at:
+http://localhost:8890/?token=1a28eb72c2c20a1b6877e50c033d4de23a43d102e9b74b43
+Shutdown this notebook server (y/[n])? y
+[C 21:07:35.668 NotebookApp] Shutdown confirmed
+[I 21:07:35.673 NotebookApp] Shutting down 2 kernels
+[I 21:07:36.201 NotebookApp] Kernel shutdown: b5634116-5a5f-4f45-a70b-4f077bb71f34
+[I 21:07:36.201 NotebookApp] Kernel shutdown: 24896843-6015-4d61-952b-f60623cc6ab1
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git commit -m "starting to merge"
+Auf Branch main
+Ihr Branch ist auf demselben Stand wie 'origin/main'.
+
+Unversionierte Dateien:
+  (benutzen Sie "git add <Datei>...", um die Änderungen zum Commit vorzumerken)
+	parameter_sweep.ipynb
+
+nichts zum Commit vorgemerkt, aber es gibt unversionierte Dateien
+(benutzen Sie "git add" zum Versionieren)
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git add *
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git add *.8
+Schwerwiegend: Pfadspezifikation '*.8' stimmt mit keinen Dateien überein
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git add *.*
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git commit -m "starting to merge"
+[main e33200c] starting to merge
+ 1 file changed, 721 insertions(+)
+ create mode 100644 parameter_sweep.ipynb
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git push
+To https://github.com/RiaRosenauer/QuEra_challenge.git
+ ! [rejected]        main -> main (fetch first)
+Fehler: Fehler beim Versenden einiger Referenzen nach 'https://github.com/RiaRosenauer/QuEra_challenge.git'
+Hinweis: Aktualisierungen wurden zurückgewiesen, weil das Remote-Repository Commits enthält,
+Hinweis: die lokal nicht vorhanden sind. Das wird üblicherweise durch einen "push" von
+Hinweis: Commits auf dieselbe Referenz von einem anderen Repository aus verursacht.
+Hinweis: Vielleicht müssen Sie die externen Änderungen zusammenführen (z. B. 'git pull ...')
+Hinweis: bevor Sie erneut "push" ausführen.
+Hinweis: Siehe auch die Sektion 'Note about fast-forwards' in 'git push --help'
+Hinweis: für weitere Details.
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 1), reused 4 (delta 1), pack-reused 0
+Entpacke Objekte: 100% (4/4), 58.49 KiB | 3.08 MiB/s, fertig.
+Von https://github.com/RiaRosenauer/QuEra_challenge
+   690f465..0c036c4  main       -> origin/main
+Hinweis: Sie haben abweichende Branches und müssen angeben, wie mit diesen
+Hinweis: umgegangen werden soll.
+Hinweis: Sie können dies tun, indem Sie einen der folgenden Befehle vor dem
+Hinweis: nächsten Pull ausführen:
+Hinweis: 
+Hinweis:   git config pull.rebase false  # Merge
+Hinweis:   git config pull.rebase true   # Rebase
+Hinweis:   git config pull.ff only       # ausschließlich Vorspulen
+Hinweis: 
+Hinweis: Sie können statt "git config" auch "git config --global" nutzen, um
+Hinweis: einen Standard für alle Repositories festzulegen. Sie können auch die
+Hinweis: Option --rebase, --no-rebase oder --ff-only auf der Kommandozeile nutzen,
+Hinweis: um das konfigurierte Standardverhalten pro Aufruf zu überschreiben.
+Schwerwiegend: Es muss angegeben werden, wie mit abweichenden Branches umgegangen werden sollen.
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git push
+To https://github.com/RiaRosenauer/QuEra_challenge.git
+ ! [rejected]        main -> main (non-fast-forward)
+Fehler: Fehler beim Versenden einiger Referenzen nach 'https://github.com/RiaRosenauer/QuEra_challenge.git'
+Hinweis: Aktualisierungen wurden zurückgewiesen, weil die Spitze Ihres aktuellen
+Hinweis: Branches hinter seinem externen Gegenstück zurückgefallen ist. Führen Sie
+Hinweis: die externen Änderungen zusammen (z. B. 'git pull ...') bevor Sie "push"
+Hinweis: erneut ausführen.
+Hinweis: Siehe auch die Sektion 'Note about fast-forwards' in 'git push --help'
+Hinweis: für weitere Details.
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git pull
+Hinweis: Sie haben abweichende Branches und müssen angeben, wie mit diesen
+Hinweis: umgegangen werden soll.
+Hinweis: Sie können dies tun, indem Sie einen der folgenden Befehle vor dem
+Hinweis: nächsten Pull ausführen:
+Hinweis: 
+Hinweis:   git config pull.rebase false  # Merge
+Hinweis:   git config pull.rebase true   # Rebase
+Hinweis:   git config pull.ff only       # ausschließlich Vorspulen
+Hinweis: 
+Hinweis: Sie können statt "git config" auch "git config --global" nutzen, um
+Hinweis: einen Standard für alle Repositories festzulegen. Sie können auch die
+Hinweis: Option --rebase, --no-rebase oder --ff-only auf der Kommandozeile nutzen,
+Hinweis: um das konfigurierte Standardverhalten pro Aufruf zu überschreiben.
+Schwerwiegend: Es muss angegeben werden, wie mit abweichenden Branches umgegangen werden sollen.
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git config pull.rebase false
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git pull
+Merge made by the 'ort' strategy.
+ Bloqade_playing_around_1.ipynb | 771 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++------------------------------------------------------------------------------------------------------------------------------------------------------
+ IndependenceTest.ipynb         | 162 ++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 372 insertions(+), 561 deletions(-)
+ create mode 100644 IndependenceTest.ipynb
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git push
+Objekte aufzählen: 7, fertig.
+Zähle Objekte: 100% (7/7), fertig.
+Delta-Kompression verwendet bis zu 12 Threads.
+Komprimiere Objekte: 100% (5/5), fertig.
+Schreibe Objekte: 100% (5/5), 27.62 KiB | 13.81 MiB/s, fertig.
+Gesamt 5 (Delta 2), Wiederverwendet 0 (Delta 0), Pack wiederverwendet 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/RiaRosenauer/QuEra_challenge.git
+   0c036c4..d93b09c  main -> main
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ jupyter-notebook
+[I 21:11:52.686 NotebookApp] The port 8888 is already in use, trying another port.
+[I 21:11:52.686 NotebookApp] The port 8889 is already in use, trying another port.
+[I 21:11:52.711 NotebookApp] JupyterLab extension loaded from /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jupyterlab
+[I 21:11:52.711 NotebookApp] JupyterLab application directory is /Library/Frameworks/Python.framework/Versions/3.6/share/jupyter/lab
+[I 21:11:52.712 NotebookApp] Serving notebooks from local directory: /Users/riarosenauer/Library/Mobile Documents/com~apple~CloudDocs/Ria/Uni/Hackaton/QuantHack 2024/QuEra_challenge
+[I 21:11:52.712 NotebookApp] The Jupyter Notebook is running at:
+[I 21:11:52.712 NotebookApp] http://localhost:8890/?token=7d5010818affb0abc0a5953d0121f9dc93c04d1bc18a76bf
+[I 21:11:52.712 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 21:11:52.716 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/riarosenauer/Library/Jupyter/runtime/nbserver-33791-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8890/?token=7d5010818affb0abc0a5953d0121f9dc93c04d1bc18a76bf
+[W 21:11:58.683 NotebookApp] Notebook IndependenceTest.ipynb is not trusted
+[I 21:11:58.793 NotebookApp] Kernel started: 35bc2682-3d52-4a80-b435-b794d1800c95
+[W 21:11:58.806 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20240504211152 (::1) 6.25ms referer=http://localhost:8890/notebooks/IndependenceTest.ipynb
+[W 21:11:58.860 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20240504211152 (::1) 1.06ms referer=http://localhost:8890/notebooks/IndependenceTest.ipynb
+[W 21:12:12.257 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20240504211152 (::1) 1.80ms referer=http://localhost:8890/notebooks/parameter_sweep.ipynb
+[I 21:12:12.319 NotebookApp] Kernel started: ca5460a6-6cdf-4eea-99ad-d2d8b6d09f94
+[W 21:12:12.476 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20240504211152 (::1) 1.42ms referer=http://localhost:8890/notebooks/parameter_sweep.ipynb
+[I 21:13:15.821 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:13:15.937 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:13:16.112 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:13:19.234 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:13:19.402 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:13:28.248 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:13:28.433 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:13:41.293 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:13:41.457 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:13:41.577 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:13:58.770 NotebookApp] Saving file at /IndependenceTest.ipynb
+[W 21:13:58.770 NotebookApp] Notebook IndependenceTest.ipynb is not trusted
+[I 21:14:57.498 NotebookApp] Saving file at /parameter_sweep.ipynb
+^C[I 21:41:01.192 NotebookApp] interrupted
+Serving notebooks from local directory: /Users/riarosenauer/Library/Mobile Documents/com~apple~CloudDocs/Ria/Uni/Hackaton/QuantHack 2024/QuEra_challenge
+2 active kernels
+The Jupyter Notebook is running at:
+http://localhost:8890/?token=7d5010818affb0abc0a5953d0121f9dc93c04d1bc18a76bf
+Shutdown this notebook server (y/[n])? y
+[C 21:41:02.250 NotebookApp] Shutdown confirmed
+[I 21:41:02.254 NotebookApp] Shutting down 2 kernels
+[I 21:41:02.469 NotebookApp] Kernel shutdown: 35bc2682-3d52-4a80-b435-b794d1800c95
+[I 21:41:02.470 NotebookApp] Kernel shutdown: ca5460a6-6cdf-4eea-99ad-d2d8b6d09f94
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 2), reused 4 (delta 2), pack-reused 0
+Entpacke Objekte: 100% (4/4), 2.71 KiB | 395.00 KiB/s, fertig.
+Von https://github.com/RiaRosenauer/QuEra_challenge
+   d93b09c..8f738d2  main       -> origin/main
+Aktualisiere d93b09c..8f738d2
+Fehler: Ihre lokalen Änderungen in den folgenden Dateien würden durch den Merge
+überschrieben werden:
+	IndependenceTest.ipynb
+	parameter_sweep.ipynb
+Bitte committen oder stashen Sie Ihre Änderungen, bevor Sie mergen.
+Abbruch
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git commit -m "nerv"
+Auf Branch main
+Ihr Branch ist 1 Commit hinter 'origin/main', und kann vorgespult werden.
+  (benutzen Sie "git pull", um Ihren lokalen Branch zu aktualisieren)
+
+Änderungen, die nicht zum Commit vorgemerkt sind:
+  (benutzen Sie "git add <Datei>...", um die Änderungen zum Commit vorzumerken)
+  (benutzen Sie "git restore <Datei>...", um die Änderungen im Arbeitsverzeichnis zu verwerfen)
+	geändert:       IndependenceTest.ipynb
+	geändert:       parameter_sweep.ipynb
+
+keine Änderungen zum Commit vorgemerkt (benutzen Sie "git add" und/oder "git commit -a")
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git add *
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git add *.*
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git commit -m "nerv"
+[main 7ab4436] nerv
+ 2 files changed, 28 insertions(+), 7 deletions(-)
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git pull
+automatischer Merge von IndependenceTest.ipynb
+automatischer Merge von parameter_sweep.ipynb
+KONFLIKT (Inhalt): Merge-Konflikt in parameter_sweep.ipynb
+Automatischer Merge fehlgeschlagen; beheben Sie die Konflikte und committen Sie dann das Ergebnis.
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git config pull.rebase false
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git pull
+Fehler: Pullen ist nicht möglich, weil Sie nicht zusammengeführte Dateien haben.
+Hinweis: Korrigieren Sie dies im Arbeitsverzeichnis, und benutzen Sie
+Hinweis: dann 'git add/rm <Datei>', um die Auflösung entsprechend zu markieren
+Hinweis: und zu committen.
+Schwerwiegend: Beende wegen unaufgelöstem Konflikt.
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git status
+Auf Branch main
+Ihr Branch und 'origin/main' sind divergiert,
+und haben jeweils 1 und 1 unterschiedliche Commits.
+  (benutzen Sie "git pull", um Ihren Branch mit dem Remote-Branch zusammenzuführen)
+
+Sie haben nicht zusammengeführte Pfade.
+  (beheben Sie die Konflikte und führen Sie "git commit" aus)
+  (benutzen Sie "git merge --abort", um den Merge abzubrechen)
+
+Zum Commit vorgemerkte Änderungen:
+	geändert:       IndependenceTest.ipynb
+
+Nicht zusammengeführte Pfade:
+  (benutzen Sie "git add/rm <Datei>...", um die Auflösung zu markieren)
+	von beiden geändert:    parameter_sweep.ipynb
+
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git pull
+Fehler: Pullen ist nicht möglich, weil Sie nicht zusammengeführte Dateien haben.
+Hinweis: Korrigieren Sie dies im Arbeitsverzeichnis, und benutzen Sie
+Hinweis: dann 'git add/rm <Datei>', um die Auflösung entsprechend zu markieren
+Hinweis: und zu committen.
+Schwerwiegend: Beende wegen unaufgelöstem Konflikt.
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git commit -m "nerv"
+U	parameter_sweep.ipynb
+Fehler: Committen ist nicht möglich, weil Sie nicht zusammengeführte Dateien haben.
+Hinweis: Korrigieren Sie dies im Arbeitsverzeichnis, und benutzen Sie
+Hinweis: dann 'git add/rm <Datei>', um die Auflösung entsprechend zu markieren
+Hinweis: und zu committen.
+Schwerwiegend: Beende wegen unaufgelöstem Konflikt.
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git commit -m "nerv"
+U	parameter_sweep.ipynb
+Fehler: Committen ist nicht möglich, weil Sie nicht zusammengeführte Dateien haben.
+Hinweis: Korrigieren Sie dies im Arbeitsverzeichnis, und benutzen Sie
+Hinweis: dann 'git add/rm <Datei>', um die Auflösung entsprechend zu markieren
+Hinweis: und zu committen.
+Schwerwiegend: Beende wegen unaufgelöstem Konflikt.
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git pull
+Fehler: Pullen ist nicht möglich, weil Sie nicht zusammengeführte Dateien haben.
+Hinweis: Korrigieren Sie dies im Arbeitsverzeichnis, und benutzen Sie
+Hinweis: dann 'git add/rm <Datei>', um die Auflösung entsprechend zu markieren
+Hinweis: und zu committen.
+Schwerwiegend: Beende wegen unaufgelöstem Konflikt.
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git status
+Auf Branch main
+Ihr Branch und 'origin/main' sind divergiert,
+und haben jeweils 1 und 1 unterschiedliche Commits.
+  (benutzen Sie "git pull", um Ihren Branch mit dem Remote-Branch zusammenzuführen)
+
+Sie haben nicht zusammengeführte Pfade.
+  (beheben Sie die Konflikte und führen Sie "git commit" aus)
+  (benutzen Sie "git merge --abort", um den Merge abzubrechen)
+
+Zum Commit vorgemerkte Änderungen:
+	geändert:       IndependenceTest.ipynb
+
+Nicht zusammengeführte Pfade:
+  (benutzen Sie "git add/rm <Datei>...", um die Auflösung zu markieren)
+	von beiden geändert:    parameter_sweep.ipynb
+
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git add *
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git add *.*
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git commit -m "nerv"
+[main c52e62b] nerv
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git pull
+Bereits aktuell.
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ jupyter-notebook 
+[I 21:46:23.339 NotebookApp] The port 8888 is already in use, trying another port.
+[I 21:46:23.340 NotebookApp] The port 8889 is already in use, trying another port.
+[I 21:46:23.369 NotebookApp] JupyterLab extension loaded from /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/jupyterlab
+[I 21:46:23.369 NotebookApp] JupyterLab application directory is /Library/Frameworks/Python.framework/Versions/3.6/share/jupyter/lab
+[I 21:46:23.371 NotebookApp] Serving notebooks from local directory: /Users/riarosenauer/Library/Mobile Documents/com~apple~CloudDocs/Ria/Uni/Hackaton/QuantHack 2024/QuEra_challenge
+[I 21:46:23.371 NotebookApp] The Jupyter Notebook is running at:
+[I 21:46:23.371 NotebookApp] http://localhost:8890/?token=19bc7a5f69de8e90e296bdc4f6c372d0e28810f1a77b77c6
+[I 21:46:23.371 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 21:46:23.375 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///Users/riarosenauer/Library/Jupyter/runtime/nbserver-37308-open.html
+    Or copy and paste one of these URLs:
+        http://localhost:8890/?token=19bc7a5f69de8e90e296bdc4f6c372d0e28810f1a77b77c6
+[W 21:46:27.217 NotebookApp] Notebook parameter_sweep.ipynb is not trusted
+[I 21:46:27.370 NotebookApp] Kernel started: f6cc49ce-2c6c-444c-ac6d-227008235024
+[W 21:46:27.385 NotebookApp] 404 GET /nbextensions/pydeck/extension.js?v=20240504214623 (::1) 7.75ms referer=http://localhost:8890/notebooks/parameter_sweep.ipynb
+[W 21:46:27.470 NotebookApp] 404 GET /nbextensions/widgets/notebook/js/extension.js?v=20240504214623 (::1) 1.84ms referer=http://localhost:8890/notebooks/parameter_sweep.ipynb
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+Intel MKL WARNING: Support of Intel(R) Streaming SIMD Extensions 4.2 (Intel(R) SSE4.2) enabled only processors has been deprecated. Intel oneAPI Math Kernel Library 2025.0 will require Intel(R) Advanced Vector Extensions (Intel(R) AVX) instructions.
+[I 21:48:20.230 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:48:27.316 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:48:40.641 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:48:40.825 NotebookApp] Saving file at /parameter_sweep.ipynb
+[I 21:59:13.790 NotebookApp] Starting buffering for f6cc49ce-2c6c-444c-ac6d-227008235024:a6fde6b3359d4720a2c72ddc9afdb1ed
+^C[I 21:59:17.835 NotebookApp] interrupted
+Serving notebooks from local directory: /Users/riarosenauer/Library/Mobile Documents/com~apple~CloudDocs/Ria/Uni/Hackaton/QuantHack 2024/QuEra_challenge
+1 active kernel
+The Jupyter Notebook is running at:
+http://localhost:8890/?token=19bc7a5f69de8e90e296bdc4f6c372d0e28810f1a77b77c6
+Shutdown this notebook server (y/[n])? y
+[C 21:59:19.236 NotebookApp] Shutdown confirmed
+[I 21:59:19.237 NotebookApp] Shutting down 1 kernel
+[I 21:59:19.867 NotebookApp] Kernel shutdown: f6cc49ce-2c6c-444c-ac6d-227008235024
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
+Entpacke Objekte: 100% (3/3), 991 Bytes | 247.00 KiB/s, fertig.
+Von https://github.com/RiaRosenauer/QuEra_challenge
+   8f738d2..e997fc8  main       -> origin/main
+Fehler: Ihre lokalen Änderungen in den folgenden Dateien würden durch den Merge
+überschrieben werden:
+	parameter_sweep.ipynb
+Bitte committen oder stashen Sie Ihre Änderungen, bevor Sie mergen.
+Abbruch
+Merge mit Strategie ort fehlgeschlagen.
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git commit -m "nerv"
+Auf Branch main
+Ihr Branch und 'origin/main' sind divergiert,
+und haben jeweils 2 und 1 unterschiedliche Commits.
+  (benutzen Sie "git pull", um Ihren Branch mit dem Remote-Branch zusammenzuführen)
+
+Änderungen, die nicht zum Commit vorgemerkt sind:
+  (benutzen Sie "git add <Datei>...", um die Änderungen zum Commit vorzumerken)
+  (benutzen Sie "git restore <Datei>...", um die Änderungen im Arbeitsverzeichnis zu verwerfen)
+	geändert:       parameter_sweep.ipynb
+
+Unversionierte Dateien:
+  (benutzen Sie "git add <Datei>...", um die Änderungen zum Commit vorzumerken)
+	21:47:21_d_max=3.2909011840820312bitstrings.pickle
+	21:47:40_d_max=3.2909011840820312bitstrings.pickle
+	21:48:23_d_max=3.2909011840820312bitstrings.pickle
+
+keine Änderungen zum Commit vorgemerkt (benutzen Sie "git add" und/oder "git commit -a")
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git add *
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git add *.*
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git pull
+Fehler: Ihre lokalen Änderungen in den folgenden Dateien würden durch den Merge
+überschrieben werden:
+  21:47:21_d_max=3.2909011840820312bitstrings.pickle 21:47:40_d_max=3.2909011840820312bitstrings.pickle 21:48:23_d_max=3.2909011840820312bitstrings.pickle parameter_sweep.ipynb
+Merge mit Strategie ort fehlgeschlagen.
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ ls -al
+total 1488
+drwxr-xr-x  13 riarosenauer  staff     416 May  3 22:42 .
+drwxr-xr-x   4 riarosenauer  staff     128 May  3 22:41 ..
+drwxr-xr-x  16 riarosenauer  staff     512 May  4 21:59 .git
+-rw-r--r--   1 riarosenauer  staff    3078 May  3 22:42 .gitignore
+drwxr-xr-x   6 riarosenauer  staff     192 May  4 21:13 .ipynb_checkpoints
+-rw-r--r--   1 riarosenauer  staff       0 May  4 21:59 21:47:21_d_max=3.2909011840820312bitstrings.pickle
+-rw-r--r--   1 riarosenauer  staff       0 May  4 21:59 21:47:40_d_max=3.2909011840820312bitstrings.pickle
+-rw-r--r--   1 riarosenauer  staff       0 May  4 21:59 21:48:23_d_max=3.2909011840820312bitstrings.pickle
+-rw-r--r--   1 riarosenauer  staff  360949 May  4 21:10 Bloqade_playing_around_1.ipynb
+-rw-r--r--@  1 riarosenauer  staff  300879 May  4 12:11 Bloqade_tutorial.ipynb
+-rw-r--r--   1 riarosenauer  staff   10517 May  4 21:41 IndependenceTest.ipynb
+-rw-r--r--   1 riarosenauer  staff      17 May  3 22:42 README.md
+-rw-r--r--   1 riarosenauer  staff   72395 May  4 21:59 parameter_sweep.ipynb
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ nano gitignore
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ nano gitignore
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git pull
+Fehler: Ihre lokalen Änderungen in den folgenden Dateien würden durch den Merge
+überschrieben werden:
+  21:47:21_d_max=3.2909011840820312bitstrings.pickle 21:47:40_d_max=3.2909011840820312bitstrings.pickle 21:48:23_d_max=3.2909011840820312bitstrings.pickle parameter_sweep.ipynb
+Merge mit Strategie ort fehlgeschlagen.
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git fetch --all
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git branch backup-master
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ 
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git reset --hard origin/master
+Schwerwiegend: mehrdeutiges Argument 'origin/master': unbekannter Commit oder Pfad existiert nicht
+im Arbeitsverzeichnis
+Benutzen Sie '--', um Pfade und Commits zu trennen, ähnlich wie:
+'git <Befehl> [<Commit>...] -- [<Datei>...]'
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ 
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git reset --hard origin/master
+Schwerwiegend: mehrdeutiges Argument 'origin/master': unbekannter Commit oder Pfad existiert nicht
+im Arbeitsverzeichnis
+Benutzen Sie '--', um Pfade und Commits zu trennen, ähnlich wie:
+'git <Befehl> [<Commit>...] -- [<Datei>...]'
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git reset --hard origin/master
+Schwerwiegend: mehrdeutiges Argument 'origin/master': unbekannter Commit oder Pfad existiert nicht
+im Arbeitsverzeichnis
+Benutzen Sie '--', um Pfade und Commits zu trennen, ähnlich wie:
+'git <Befehl> [<Commit>...] -- [<Datei>...]'
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git reset --hard origin/master
+Schwerwiegend: mehrdeutiges Argument 'origin/master': unbekannter Commit oder Pfad existiert nicht
+im Arbeitsverzeichnis
+Benutzen Sie '--', um Pfade und Commits zu trennen, ähnlich wie:
+'git <Befehl> [<Commit>...] -- [<Datei>...]'
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git reset --hard
+HEAD ist jetzt bei c52e62b nerv
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git clean -fd
+Lösche gitignore
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ git pull
+automatischer Merge von parameter_sweep.ipynb
+Merge made by the 'ort' strategy.
+ parameter_sweep.ipynb | 152 +++++++++++++++++++++++++++++++++++++++-----------------------------------------------------------------------------------------------------------------
+ 1 file changed, 39 insertions(+), 113 deletions(-)
+(EthQuant) eduroam-hix-dock-1-165:QuEra_challenge riarosenauer$ nano .gitignore
+
+  UW PICO 5.09                                                                                                      File: .gitignore                                                                                                       Modified  
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+
+
+# Pickle data
+*.pkl
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/   
+lib64/ 
+parts/ 
+sdist/ 
+var/   
+wheels/
+share/python-wheels/
+*.egg-info/   
+.installed.cfg
+*.egg   
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage  
+.coverage.*
+.cache
+nosetests.xml 
+coverage.xml  
+*.cover       
+*.py,cover    
+.hypothesis/  
+.pytest_cache/
+cover/
+
+# Translations
+*.mo 
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+
+^G Get Help                             ^O WriteOut                             ^R Read File                            ^Y Prev Pg                              ^K Cut Text                             ^C Cur Pos                              
+^X Exit                                 ^J Justify                              ^W Where is                             ^V Next Pg                              ^U UnCut Text                           ^T To Spell                             
